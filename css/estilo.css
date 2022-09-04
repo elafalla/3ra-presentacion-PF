@@ -65,13 +65,14 @@ nav div div ul li a {
 .tituloPag {
   margin: 1rem;
   padding-left: 5px;
+  padding-bottom: 1rem;
   font-size: 2.5rem;
   border-left: 5px solid #007bff; }
 
 .parrafo {
   margin: 0.5rem;
-  padding: 3pt;
-  font-size: 10pt;
+  padding: 1.5rem;
+  font-size: 1.4rem;
   text-align: justify; }
 
 h3 {
@@ -102,10 +103,43 @@ h4 {
     .container-fluid footer div span a {
       color: white; }
 
+.container-fluid footer ul p {
+  color: white;
+  font-size: 1.5rem; }
+
 .container-fluid footer ul li a {
   color: white; }
 
-/***** GENERALES EXCLUSIVOS DE INDEX *****/
+/*********************************** GENERALES EXCLUSIVOS DE INDEX ***********************************/
+.visionMision {
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem;
+  border-top: 3px solid #007bff;
+  border-bottom: 3px solid #007bff; }
+
+.cajaVm {
+  border: 2px solid #007bff;
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px;
+  margin: 2rem;
+  width: 30vw;
+  text-align: center; }
+  .cajaVm h3 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #007bff;
+    color: black; }
+  .cajaVm p {
+    text-align: center;
+    font-size: 1.5rem;
+    text-align: justify;
+    padding: 1.5rem; }
+
 .sectores {
   margin-top: 2px;
   margin-bottom: 40px;
@@ -136,7 +170,7 @@ h4 {
   display: flex;
   justify-content: center; }
 
-/***** GENERALES EXCLUSIVOS DE NOSOTROS *****/
+/*********************************** GENERALES EXCLUSIVOS DE NOSOTROS ***********************************/
 .parrafo1 {
   grid-area: parrafo1;
   margin: 0.5rem;
@@ -172,7 +206,7 @@ h4 {
   grid-template-areas: "parrafo1 parrafo1 imagen1" "imagen2 parrafo2 parrafo2";
   gap: 15px; }
 
-/***** GENERALES EXCLUSIVOS DE SERVICIOS *****/
+/*********************************** GENERALES EXCLUSIVOS DE SERVICIOS ***********************************/
 .rubroServ {
   margin-top: 30px;
   margin-bottom: 50px;
@@ -258,7 +292,7 @@ aside {
     color: #007bff;
     text-transform: uppercase; }
 
-/***** GENERALES EXCLUSIVOS DE FAQ's *****/
+/*********************************** GENERALES EXCLUSIVOS DE FAQ's ***********************************/
 .faq {
   padding: 5px; }
 
@@ -288,7 +322,7 @@ aside {
   font-weight: bold;
   font-size: 11pt; }
 
-/***** GENERALES EXCLUSIVOS DE CONTACTO *****/
+/*********************************** GENERALES EXCLUSIVOS DE CONTACTO ***********************************/
 .contenedor {
   background: #24303c;
   width: 430px;
@@ -365,7 +399,7 @@ aside {
   display: grid;
   grid-template-areas: "formulario" "direccion"; }
 
-/*********************************************************************** DISEÑO RESPONSIVE ***************/
+/***************************************** DISEÑO RESPONSIVE *********************************************/
 /***************************************************** MEDIDAS QUERY PARA TABLETA */
 @media (min-width: 700px) and (max-width: 1100px) {
   .sectores {
@@ -482,6 +516,10 @@ aside {
     color: white; }
     .container-fluid footer div span a {
       color: white; }
+
+.container-fluid footer ul p {
+  color: white;
+  font-size: 1.5rem; }
 
 .container-fluid footer ul li a {
   color: white; }
