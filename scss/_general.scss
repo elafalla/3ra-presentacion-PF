@@ -2,9 +2,11 @@ nav {
   div {
     div {
       ul {
+        width: 600px;
         li {
           a {
             transition: 0.5s;
+            text-align: center;
 
             &:hover {
               text-decoration: underline;
@@ -62,7 +64,7 @@ h4 {
 
 .visionMision {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin: 1rem;
   border-top: 3px solid $color-principal;
   border-bottom: 3px solid $color-principal;
@@ -73,7 +75,6 @@ h4 {
   border-radius: 10px;
   box-shadow: 4px 4px 10px;
   margin: 2rem;
-  width: 30vw;
   text-align: center;
 
   h3 {
@@ -89,7 +90,8 @@ h4 {
 
   p {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    font-weight: bold;
     text-align: justify;
     padding: 1.5rem;
   }
@@ -135,11 +137,12 @@ h4 {
 /*********************************** GENERALES EXCLUSIVOS DE NOSOTROS ***********************************/
 
 @mixin parrafos {
-  margin: 0.5rem;
+  margin: 0.7rem;
   padding: 3pt;
   height: auto;
   width: auto;
   text-align: justify;
+  font-size: 1.4rem;
 }
 
 .parrafo1 {
@@ -157,6 +160,7 @@ h4 {
   box-shadow: 2px 2px 8px;
   height: fit-content;
   width: fit-content;
+  margin: 0.7rem;
 }
 
 .imagen1 {
@@ -378,8 +382,8 @@ aside {
 
 .datos {
   grid-area: direccion;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 10px;
   justify-self: center;
 
   h3 {
@@ -389,32 +393,33 @@ aside {
   }
 }
 
-.pContacto {
-  margin: 1rem;
-  padding: 1rem;
-  text-align: justify;
-  font-size: 10pt;
-  border: 1px double $color-principal;
+.mapaContacto {
+  grid-area: mapa;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  border: 3px solid $color-principal;
+  width: fit-content;
 }
 
 #contacto {
   grid-area: formulario;
   display: flex;
-  text-align: center;
   justify-content: center;
+  text-align: center;
 }
 
 .parrafoCont {
   font-size: 1.5rem;
-  text-align: center;
+  text-align: right;
   margin-bottom: 40px;
 }
 
 .gridPadreCont {
   display: grid;
   grid-template-areas:
-    "formulario"
-    "direccion";
+    "formulario formulario"
+    "direccion mapa";
+  gap: 5rem;
 }
 
 /***************************************** DISEÑO RESPONSIVE *********************************************/
@@ -474,7 +479,8 @@ aside {
   .gridPadreCont {
     grid-template-areas:
       "formulario"
-      "direccion";
+      "direccion"
+      "mapa";
   }
 
   #contacto {
@@ -482,8 +488,27 @@ aside {
     padding-bottom: 20px;
   }
 
+  .parrafoCont {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
   .pContacto {
     font-size: 10pt;
+  }
+
+  .datos {
+    padding: 0;
+    margin: 0;
+  }
+
+  .mapaContacto {
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
   }
 }
 
@@ -492,6 +517,10 @@ aside {
   .tituloPag {
     padding-top: 3px;
     font-size: 2rem;
+  }
+
+  .visionMision {
+    flex-wrap: wrap;
   }
 
   .logo_wapp {
@@ -562,7 +591,27 @@ aside {
   .gridPadreCont {
     grid-template-areas:
       "formulario"
-      "direccion";
+      "direccion"
+      "mapa";
+  }
+
+  .parrafoCont {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .mapaContacto {
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    
+    iframe {
+      width: 70vw;
+      height: 70vw;
+    }
   }
 
   #contacto {
@@ -594,6 +643,10 @@ aside {
   }
 
   //************************************************************index.html
+  .visionMision {
+    flex-wrap: wrap;
+  }
+
   .sectores {
     flex-wrap: wrap;
   }
@@ -644,7 +697,8 @@ aside {
   .gridPadreCont {
     grid-template-areas:
       "formulario"
-      "direccion";
+      "direccion"
+      "mapa";
   }
 
   #contacto {
@@ -654,5 +708,29 @@ aside {
 
   .pContacto {
     font-size: 10pt;
+  }
+
+  .datos {
+    h3 {
+      font-size: 1.6rem;
+    }
+  }
+  .parrafoCont {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .mapaContacto {
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    
+    iframe {
+      width: 70vw;
+      height: 70vw;
+    }
   }
 }
