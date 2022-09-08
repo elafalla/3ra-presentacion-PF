@@ -104,7 +104,8 @@ h4 {
   .container-fluid footer div span {
     color: white; }
     .container-fluid footer div span a {
-      color: white; }
+      color: white;
+      font-weight: bold; }
 
 .container-fluid footer ul p {
   color: white;
@@ -304,11 +305,14 @@ aside {
   padding: 5px; }
 
 .faqLista {
-  margin-left: 30px; }
+  margin-left: 30px;
+  font-size: 1.5rem;
+  font-weight: bold; }
 
 .faqPregunta {
   font-size: 1.5rem;
-  font-weight: bold; }
+  font-weight: bold;
+  margin: 0; }
 
 .faqRespuesta {
   padding-top: 5px;
@@ -317,7 +321,8 @@ aside {
   padding-right: 15px;
   font-size: 1.4rem;
   font-style: oblique;
-  text-align: justify; }
+  text-align: justify;
+  font-weight: lighter; }
 
 .faqContacto {
   margin: 35px;
@@ -568,7 +573,8 @@ aside {
   .container-fluid footer div span {
     color: white; }
     .container-fluid footer div span a {
-      color: white; }
+      color: white;
+      font-weight: bold; }
 
 .container-fluid footer ul p {
   color: white;
