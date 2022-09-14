@@ -1,14 +1,8 @@
 /* HEADER */
-#menu a {
-  font-size: 1.8rem;
-  font-weight: bold;
-  margin-left: 40px;
-}
-
 .header {
   background-image: url("../img/portada.png");
   background-position: center;
-  height: 40vh;
+  height: 60vh;
   width: 100%;
   position: relative;
   opacity: 80%;
@@ -22,11 +16,16 @@
     left: 0;
 
     h1 {
-      font-size: 4rem;
+      font-size: 5rem;
+      font-weight: bold;
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      margin-bottom: 0;
     }
 
     p {
-      font-size: 2rem;
+      font-size: 1.7rem;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      margin-bottom: 0;
     }
   }
 }

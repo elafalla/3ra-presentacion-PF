@@ -1,21 +1,9 @@
-nav {
-  div {
-    div {
-      ul {
-        width: 600px;
-        li {
-          a {
-            transition: 0.5s;
-            text-align: center;
+body {
+  background-color: $color-secundario;
+}
 
-            &:hover {
-              text-decoration: underline;
-            }
-          }
-        }
-      }
-    }
-  }
+h2 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .tituloPag {
@@ -34,6 +22,7 @@ nav {
 }
 
 h3 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   text-align: left;
   color: black;
   font-weight: bold;
@@ -41,6 +30,7 @@ h3 {
 }
 
 h4 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   text-align: left;
   color: black;
   font-size: larger;
@@ -202,6 +192,7 @@ h4 {
   text-align: center;
   font-size: 12px;
   box-shadow: 3px 3px 10px;
+  background-color: white;
 
   h3 {
     padding-bottom: 3px;
@@ -278,6 +269,7 @@ aside {
   left: 0;
   right: 0;
   margin: auto;
+  margin-bottom: 3rem;
 
   h3 {
     text-align: center;

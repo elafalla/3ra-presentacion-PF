@@ -7,15 +7,10 @@ html {
   font-size: 62.5%; }
 
 /* HEADER */
-#menu a {
-  font-size: 1.8rem;
-  font-weight: bold;
-  margin-left: 40px; }
-
 .header {
   background-image: url("../img/portada.png");
   background-position: center;
-  height: 40vh;
+  height: 60vh;
   width: 100%;
   position: relative;
   opacity: 80%; }
@@ -27,9 +22,14 @@ html {
     bottom: 0;
     left: 0; }
     .header div h1 {
-      font-size: 4rem; }
+      font-size: 5rem;
+      font-weight: bold;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      margin-bottom: 0; }
     .header div p {
-      font-size: 2rem; }
+      font-size: 1.7rem;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      margin-bottom: 0; }
 
 /*********************************************************************** DISEÑO RESPONSIVE ***************/
 /***************************************************** MEDIDAS QUERY PARA CELULAR MINI*/
@@ -57,20 +57,31 @@ html {
       .header div p {
         font-size: 1.5rem; } }
 
-nav div div ul {
-  width: 600px; }
-  nav div div ul li a {
-    transition: 0.5s;
-    text-align: center; }
-    nav div div ul li a:hover {
-      text-decoration: underline; }
+#menu a {
+  font-size: 1.8rem; }
+
+nav {
+  background-color: #6082B6;
+  height: 60px; }
+  nav div div ul {
+    width: 650px; }
+    nav div div ul li a {
+      text-align: center; }
+      nav div div ul li a:hover {
+        color: black !important; }
+
+body {
+  background-color: #DCDCDC; }
+
+h2 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
 
 .tituloPag {
   margin: 1rem;
   padding-left: 5px;
   padding-bottom: 1rem;
   font-size: 2.5rem;
-  border-left: 5px solid #007bff; }
+  border-left: 5px solid #6082B6; }
 
 .parrafo {
   margin: 0.5rem;
@@ -79,12 +90,14 @@ nav div div ul {
   text-align: justify; }
 
 h3 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   text-align: left;
   color: black;
   font-weight: bold;
   font-size: medium; }
 
 h4 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   text-align: left;
   color: black;
   font-size: larger; }
@@ -99,31 +112,34 @@ h4 {
     height: auto; }
 
 /* FOOTER */
-.container-fluid footer div {
-  font-size: 1.5rem; }
-  .container-fluid footer div span {
-    color: white; }
-    .container-fluid footer div span a {
+.container-fluid footer {
+  background-color: #6082B6; }
+  .container-fluid footer div {
+    padding-left: 1rem;
+    font-size: 1.5rem; }
+    .container-fluid footer div span {
+      color: white; }
+      .container-fluid footer div span a {
+        color: white;
+        font-weight: bold; }
+  .container-fluid footer ul {
+    padding-right: 1rem; }
+    .container-fluid footer ul p {
       color: white;
-      font-weight: bold; }
-
-.container-fluid footer ul p {
-  color: white;
-  font-size: 1.5rem; }
-
-.container-fluid footer ul li a {
-  color: white; }
+      font-size: 1.5rem; }
+    .container-fluid footer ul li a {
+      color: white; }
 
 /*********************************** GENERALES EXCLUSIVOS DE INDEX ***********************************/
 .visionMision {
   display: flex;
   justify-content: space-evenly;
   margin: 1rem;
-  border-top: 3px solid #007bff;
-  border-bottom: 3px solid #007bff; }
+  border-top: 3px solid #6082B6;
+  border-bottom: 3px solid #6082B6; }
 
 .cajaVm {
-  border: 2px solid #007bff;
+  border: 2px solid #6082B6;
   border-radius: 10px;
   box-shadow: 4px 4px 10px;
   margin: 2rem;
@@ -135,7 +151,7 @@ h4 {
     text-transform: uppercase;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: #007bff;
+    background-color: #6082B6;
     color: black; }
   .cajaVm p {
     text-align: center;
@@ -154,7 +170,7 @@ h4 {
   margin: 5px;
   padding: 5px;
   width: 150px;
-  border: 1px solid #007bff;
+  border: 1px solid #6082B6;
   border-radius: 4px;
   text-align: center;
   font-size: 12px;
@@ -195,7 +211,7 @@ h4 {
 
 .imagen1 {
   grid-area: imagen1;
-  border: 2px solid #007bff;
+  border: 2px solid #6082B6;
   box-shadow: 2px 2px 8px;
   height: fit-content;
   width: fit-content;
@@ -203,7 +219,7 @@ h4 {
 
 .imagen2 {
   grid-area: imagen2;
-  border: 2px solid #007bff;
+  border: 2px solid #6082B6;
   box-shadow: 2px 2px 8px;
   height: fit-content;
   width: fit-content;
@@ -228,11 +244,12 @@ h4 {
   padding: 10px;
   height: 160px;
   width: 160px;
-  border: 1px solid #007bff;
+  border: 1px solid #6082B6;
   border-radius: 4px;
   text-align: center;
   font-size: 12px;
-  box-shadow: 3px 3px 10px; }
+  box-shadow: 3px 3px 10px;
+  background-color: white; }
   .cajaServ h3 {
     padding-bottom: 3px;
     text-align: center; }
@@ -263,7 +280,7 @@ h4 {
   margin-top: 15px;
   margin-bottom: 15px;
   padding: 5px;
-  border: 2px solid #007bff;
+  border: 2px solid #6082B6;
   border-radius: 10px;
   box-shadow: 3px 3px 10px;
   justify-self: center; }
@@ -273,7 +290,7 @@ h4 {
   margin-top: 15px;
   margin-bottom: 15px;
   padding: 5px;
-  border: 2px solid #007bff;
+  border: 2px solid #6082B6;
   border-radius: 10px;
   box-shadow: 3px 3px 10px;
   width: fit-content;
@@ -287,17 +304,18 @@ h4 {
 aside {
   grid-area: clientes;
   padding-top: 15px;
-  border-top: 2px solid #007bff;
+  border-top: 2px solid #6082B6;
   width: 700px;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  margin: auto; }
+  margin: auto;
+  margin-bottom: 3rem; }
   aside h3 {
     text-align: center;
     padding-bottom: 7px;
-    color: #007bff;
+    color: #6082B6;
     text-transform: uppercase; }
 
 /*********************************** GENERALES EXCLUSIVOS DE FAQ's ***********************************/
@@ -327,7 +345,7 @@ aside {
 .faqContacto {
   margin: 35px;
   padding: 5px;
-  border: 2px solid #007bff;
+  border: 2px solid #6082B6;
   border-radius: 5px;
   box-shadow: 3px 3px 10px;
   text-align: center;
@@ -356,7 +374,7 @@ aside {
   padding: 10px;
   border-radius: 3px;
   margin-bottom: 20px;
-  border: 1px solid #007bff;
+  border: 1px solid #6082B6;
   font-size: 16px;
   color: white;
   font-family: Arial, Helvetica, sans-serif; }
@@ -371,7 +389,7 @@ aside {
   border: none;
   color: white;
   font-size: 2rem;
-  background: linear-gradient(to right top, #007bff, #fffde4); }
+  background: linear-gradient(to right top, #6082B6, #fffde4); }
   .button:hover {
     cursor: pointer;
     transform: translateY(-3px);
@@ -393,7 +411,7 @@ aside {
   grid-area: mapa;
   margin-bottom: 3rem;
   padding: 2rem;
-  border: 3px solid #007bff;
+  border: 3px solid #6082B6;
   width: fit-content; }
 
 #contacto {
@@ -568,17 +586,20 @@ aside {
       height: 70vw; } }
 
 /* FOOTER */
-.container-fluid footer div {
-  font-size: 1.5rem; }
-  .container-fluid footer div span {
-    color: white; }
-    .container-fluid footer div span a {
+.container-fluid footer {
+  background-color: #6082B6; }
+  .container-fluid footer div {
+    padding-left: 1rem;
+    font-size: 1.5rem; }
+    .container-fluid footer div span {
+      color: white; }
+      .container-fluid footer div span a {
+        color: white;
+        font-weight: bold; }
+  .container-fluid footer ul {
+    padding-right: 1rem; }
+    .container-fluid footer ul p {
       color: white;
-      font-weight: bold; }
-
-.container-fluid footer ul p {
-  color: white;
-  font-size: 1.5rem; }
-
-.container-fluid footer ul li a {
-  color: white; }
+      font-size: 1.5rem; }
+    .container-fluid footer ul li a {
+      color: white; }
