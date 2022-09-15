@@ -1,9 +1,22 @@
-body {
+.membrete {
   background-color: $color-secundario;
-}
-
-h2 {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3.5rem;
+    text-shadow: 1px 1px #000;
+    text-align: center;
+    margin-bottom: 0;
+    color: white;
+  }
+  p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0;
+  }
 }
 
 .tituloPag {
@@ -22,7 +35,6 @@ h2 {
 }
 
 h3 {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   text-align: left;
   color: black;
   font-weight: bold;
@@ -30,7 +42,6 @@ h3 {
 }
 
 h4 {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   text-align: left;
   color: black;
   font-size: larger;
@@ -38,8 +49,8 @@ h4 {
 
 .logo_wapp {
   position: fixed;
-  right: 20px;
-  bottom: 200px;
+  right: 10px;
+  bottom: 80px;
   opacity: 70%;
 
   img {

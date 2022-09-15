@@ -1,13 +1,21 @@
 /* VARIABLES */
 
 * {
-    padding: 0;
-  }
-  
-  html {
-    font-size: 62.5%;
-  }
+  padding: 0;
+}
 
-  $color-principal: #6082B6;
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+}
 
-  $color-secundario: #DCDCDC;
+$color-principal: #6082b6;
+
+$color-secundario: #b2babb;
+
+$color-terciario: #FFC107;
+
+$color-cuaternario: #0097A7;

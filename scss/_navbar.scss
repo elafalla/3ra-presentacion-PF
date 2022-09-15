@@ -1,24 +1,32 @@
 #menu a {
-    font-size: 1.8rem;
-  }
-  
-  nav {
-    background-color: $color-principal;
-    height: 60px;
+  font-size: 1.7rem;
+}
+
+nav {
+  background-color: $color-principal;
+  height: 40px;
+  div {
     div {
-      div {
-        ul {
-          width: 650px;
-          li {
-            a {
-              text-align: center;
-  
-              &:hover {
-                color: black !important;
-              }
-            }
-          }
-        }
+      ul {
+        width: 60vw;
       }
     }
   }
+}
+
+.nav-link {
+  transition: 1s;
+  &:hover {
+    background-color: $color-secundario;
+  }
+}
+
+/*********************************************************************** DISEÑO RESPONSIVE ***************/
+/***************************************************** MEDIDAS QUERY PARA CELULAR MINI*/
+@media (max-width: 450px) {
+  #menu a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 20px;
+  }
+}
