@@ -1,18 +1,38 @@
 /* HEADER */
 .header {
-  background-image: url("../img/portada.png");
+  background-image: url("../img/inicio.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
   height: 60vh;
   width: 100%;
   position: relative;
   opacity: 80%;
+
+  button {
+    position: relative;
+    width: fit-content;
+    height: 5rem;
+    border: 1px 1px $color-principal;
+    border-radius: 30px;
+    background-color: $color-terciario;
+    top: 180px;
+    a {
+      padding: 6rem;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      text-decoration: none;
+      color: black;
+    }
+  }
 }
 
 /*********************************************************************** DISEÑO RESPONSIVE ***************/
 /***************************************************** MEDIDAS QUERY PARA CELULAR MINI*/
-@media (max-width: 450px) {
- .header {
-    background-image: url("../img/portada.png");
+@media (max-width: 480px) {
+  .header {
+    background-image: url("../img/inicio.jpg");
     background-position: center;
     height: 30vh;
     width: 100%;

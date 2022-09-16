@@ -2,7 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 /* VARIABLES */
 * {
-  padding: 0; }
+  padding: 0;
+  margin: 0; }
 
 html {
   font-size: 62.5%; }
@@ -13,70 +14,97 @@ body {
 
 /* HEADER */
 .header {
-  background-image: url("../img/portada.png");
+  background-image: url("../img/inicio.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
   height: 60vh;
   width: 100%;
   position: relative;
   opacity: 80%; }
+  .header button {
+    position: relative;
+    width: fit-content;
+    height: 5rem;
+    border: 1px 1px #24303c;
+    border-radius: 30px;
+    background-color: #FFC107;
+    top: 180px; }
+    .header button a {
+      padding: 6rem;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      text-decoration: none;
+      color: black; }
 
 /*********************************************************************** DISEÑO RESPONSIVE ***************/
 /***************************************************** MEDIDAS QUERY PARA CELULAR MINI*/
-@media (max-width: 450px) {
+@media (max-width: 480px) {
   .header {
-    background-image: url("../img/portada.png");
+    background-image: url("../img/inicio.jpg");
     background-position: center;
     height: 30vh;
     width: 100%;
     position: relative;
     opacity: 80%; } }
 
-#menu a {
-  font-size: 1.7rem; }
+.nav-fondo {
+  background-color: #24303c;
+  position: sticky;
+  top: 0; }
 
-nav {
-  background-color: #6082b6;
-  height: 40px; }
-  nav div div ul {
-    width: 60vw; }
+.contenedor {
+  width: 75rem;
+  margin: 0 auto; }
 
-.nav-link {
-  transition: 1s; }
-  .nav-link:hover {
-    background-color: #b2babb; }
+.navbar {
+  display: flex;
+  justify-content: space-between; }
+  .navbar a {
+    padding: 1.5rem;
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 1.8rem;
+    transition: 0.5s; }
+    .navbar a:hover {
+      background-color: #b2babb;
+      color: black;
+      font-size: 2rem;
+      font-weight: bold; }
 
 /*********************************************************************** DISEÑO RESPONSIVE ***************/
 /***************************************************** MEDIDAS QUERY PARA CELULAR MINI*/
-@media (max-width: 450px) {
-  #menu a {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-left: 20px; } }
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center; } }
 
 .membrete {
-  background-color: #b2babb; }
+  background-color: #24303c; }
   .membrete h1 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 3.5rem;
-    text-shadow: 1px 1px #000;
+    text-shadow: 2px 2px #FFC107;
     text-align: center;
     margin-bottom: 0;
-    color: white; }
+    color: whitesmoke; }
   .membrete p {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: normal;
+    color: whitesmoke;
     text-align: center;
-    margin-bottom: 0; }
+    padding-bottom: 0.7rem; }
 
 .tituloPag {
   margin: 1rem;
   padding-left: 5px;
   padding-bottom: 1rem;
   font-size: 2.5rem;
-  border-left: 5px solid #6082b6; }
+  border-left: 5px solid #24303c; }
 
 .parrafo {
   margin: 0.5rem;
@@ -106,7 +134,7 @@ h4 {
 
 /* FOOTER */
 .container-fluid footer {
-  background-color: #6082b6; }
+  background-color: #24303c; }
   .container-fluid footer div {
     padding-left: 1rem;
     font-size: 1.5rem; }
@@ -128,11 +156,11 @@ h4 {
   display: flex;
   justify-content: space-evenly;
   margin: 1rem;
-  border-top: 3px solid #6082b6;
-  border-bottom: 3px solid #6082b6; }
+  border-top: 3px solid #24303c;
+  border-bottom: 3px solid #24303c; }
 
 .cajaVm {
-  border: 2px solid #6082b6;
+  border: 2px solid #24303c;
   border-radius: 10px;
   box-shadow: 4px 4px 10px;
   margin: 2rem;
@@ -144,7 +172,7 @@ h4 {
     text-transform: uppercase;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: #6082b6;
+    background-color: #24303c;
     color: black; }
   .cajaVm p {
     text-align: center;
@@ -163,7 +191,7 @@ h4 {
   margin: 5px;
   padding: 5px;
   width: 150px;
-  border: 1px solid #6082b6;
+  border: 1px solid #24303c;
   border-radius: 4px;
   text-align: center;
   font-size: 12px;
@@ -204,7 +232,7 @@ h4 {
 
 .imagen1 {
   grid-area: imagen1;
-  border: 2px solid #6082b6;
+  border: 2px solid #24303c;
   box-shadow: 2px 2px 8px;
   height: fit-content;
   width: fit-content;
@@ -212,7 +240,7 @@ h4 {
 
 .imagen2 {
   grid-area: imagen2;
-  border: 2px solid #6082b6;
+  border: 2px solid #24303c;
   box-shadow: 2px 2px 8px;
   height: fit-content;
   width: fit-content;
@@ -237,7 +265,7 @@ h4 {
   padding: 10px;
   height: 160px;
   width: 160px;
-  border: 1px solid #6082b6;
+  border: 1px solid #24303c;
   border-radius: 4px;
   text-align: center;
   font-size: 12px;
@@ -273,7 +301,7 @@ h4 {
   margin-top: 15px;
   margin-bottom: 15px;
   padding: 5px;
-  border: 2px solid #6082b6;
+  border: 2px solid #24303c;
   border-radius: 10px;
   box-shadow: 3px 3px 10px;
   justify-self: center; }
@@ -283,7 +311,7 @@ h4 {
   margin-top: 15px;
   margin-bottom: 15px;
   padding: 5px;
-  border: 2px solid #6082b6;
+  border: 2px solid #24303c;
   border-radius: 10px;
   box-shadow: 3px 3px 10px;
   width: fit-content;
@@ -297,7 +325,7 @@ h4 {
 aside {
   grid-area: clientes;
   padding-top: 15px;
-  border-top: 2px solid #6082b6;
+  border-top: 2px solid #24303c;
   width: 700px;
   top: 0;
   bottom: 0;
@@ -308,7 +336,7 @@ aside {
   aside h3 {
     text-align: center;
     padding-bottom: 7px;
-    color: #6082b6;
+    color: #24303c;
     text-transform: uppercase; }
 
 /*********************************** GENERALES EXCLUSIVOS DE FAQ's ***********************************/
@@ -338,7 +366,7 @@ aside {
 .faqContacto {
   margin: 35px;
   padding: 5px;
-  border: 2px solid #6082b6;
+  border: 2px solid #24303c;
   border-radius: 5px;
   box-shadow: 3px 3px 10px;
   text-align: center;
@@ -346,7 +374,7 @@ aside {
   font-size: 11pt; }
 
 /*********************************** GENERALES EXCLUSIVOS DE CONTACTO ***********************************/
-.contenedor {
+.contenedor2 {
   background: #24303c;
   width: 430px;
   padding: 30px;
@@ -354,7 +382,7 @@ aside {
   margin-top: 20px;
   border-radius: 10px;
   box-shadow: 7px 13px 37px #000; }
-  .contenedor h3 {
+  .contenedor2 h3 {
     font-size: 22px;
     margin-top: 15px;
     margin-bottom: 10px;
@@ -367,7 +395,7 @@ aside {
   padding: 10px;
   border-radius: 3px;
   margin-bottom: 20px;
-  border: 1px solid #6082b6;
+  border: 1px solid #24303c;
   font-size: 16px;
   color: white;
   font-family: Arial, Helvetica, sans-serif; }
@@ -382,7 +410,7 @@ aside {
   border: none;
   color: white;
   font-size: 2rem;
-  background: linear-gradient(to right top, #6082b6, #fffde4); }
+  background: linear-gradient(to right top, #24303c, #fffde4); }
   .button:hover {
     cursor: pointer;
     transform: translateY(-3px);
@@ -404,7 +432,7 @@ aside {
   grid-area: mapa;
   margin-bottom: 3rem;
   padding: 2rem;
-  border: 3px solid #6082b6;
+  border: 3px solid #24303c;
   width: fit-content; }
 
 #contacto {
@@ -580,7 +608,7 @@ aside {
 
 /* FOOTER */
 .container-fluid footer {
-  background-color: #6082b6; }
+  background-color: #24303c; }
   .container-fluid footer div {
     padding-left: 1rem;
     font-size: 1.5rem; }

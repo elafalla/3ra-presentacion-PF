@@ -1,32 +1,39 @@
-#menu a {
-  font-size: 1.7rem;
-}
-
-nav {
+.nav-fondo {
   background-color: $color-principal;
-  height: 40px;
-  div {
-    div {
-      ul {
-        width: 60vw;
-      }
-    }
-  }
+  position: sticky;
+  top: 0;
 }
 
-.nav-link {
-  transition: 1s;
-  &:hover {
-    background-color: $color-secundario;
+.contenedor {
+  width: 75rem;
+  margin: 0 auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    padding: 1.5rem;
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 1.8rem;
+    transition: 0.5s;
+
+    &:hover {
+      background-color: $color-secundario;
+      color: black;
+      font-size: 2rem;
+      font-weight: bold;
+    }
   }
 }
 
 /*********************************************************************** DISEÑO RESPONSIVE ***************/
 /***************************************************** MEDIDAS QUERY PARA CELULAR MINI*/
-@media (max-width: 450px) {
-  #menu a {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-left: 20px;
-  }
+@media (max-width: 768px) {
+.navbar {
+  flex-direction: column;
+  align-items: center;
+}
 }
