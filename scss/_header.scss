@@ -4,26 +4,75 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 60vh;
-  width: 100%;
+  height: 50vh;
   position: relative;
-  opacity: 80%;
 
-  button {
-    position: relative;
-    width: fit-content;
-    height: 5rem;
-    border: 1px 1px $color-principal;
-    border-radius: 30px;
-    background-color: $color-terciario;
-    top: 180px;
-    a {
-      padding: 6rem;
-      text-align: center;
-      font-size: 2rem;
-      font-weight: bold;
-      text-decoration: none;
-      color: black;
+  h1 {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 5rem;
+    text-shadow: 2px 2px $color-secundario;
+    text-align: left;
+    padding-left: 1rem;
+    margin-bottom: 0;
+    color: whitesmoke;
+  }
+
+  p {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-size: 1.7rem;
+    font-weight: normal;
+    color: whitesmoke;
+    text-align: left;
+    padding-left: 1rem;
+    padding-bottom: 0.7rem;
+  }
+}
+
+.header-bg {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.contenido-header {
+  padding-right: 1rem;
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  p {
+    font-size: 1.4rem;
+  }
+}
+
+.flex-boton {
+  height: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  a {
+    background-color: $color-secundario;
+    text-shadow: 1px 1px #000;
+    color: whitesmoke;
+    padding: 1rem 2.5rem;
+    font-size: 1.4rem;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid whitesmoke;
+    border-radius: 1rem;
+    justify-content: center;
+
+    &:hover {
+      background-color: $color-principal;
+      color: $color-secundario;
+      border: 2px solid $color-secundario;
     }
   }
 }

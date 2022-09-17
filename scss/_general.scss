@@ -1,57 +1,28 @@
-.membrete {
-  background-color: $color-principal;
-  h1 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-transform: uppercase;;
-    font-weight: normal;
-    font-size: 3.5rem;
-    text-shadow: 2px 2px $color-terciario;
-    text-align: center;
-    margin-bottom: 0;
-    color: whitesmoke;
-  }
-  p {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 1.5rem;
-    font-weight: normal;
-    color: whitesmoke;
-    text-align: center;
-    padding-bottom: 0.7rem;
-  }
-}
-
-.tituloPag {
-  margin: 1rem;
+.tituloSeccion {
+  margin: 3rem 1rem;
   padding-left: 5px;
   padding-bottom: 1rem;
   font-size: 2.5rem;
-  border-left: 5px solid $color-principal;
+  border-left: 5px solid $color-secundario;
 }
 
-.parrafo {
-  margin: 0.5rem;
-  padding: 1.5rem;
-  font-size: 1.4rem;
-  text-align: justify;
-}
-
-h3 {
+/* h3 {
   text-align: left;
   color: black;
   font-weight: bold;
-  font-size: medium;
-}
+  font-size: large;
+} */
 
-h4 {
+/* h4 {
   text-align: left;
   color: black;
-  font-size: larger;
-}
+  font-size: medium;
+} */
 
 .logo_wapp {
   position: fixed;
-  right: 10px;
-  bottom: 80px;
+  right: 1rem;
+  top: 38rem;
   opacity: 70%;
 
   img {
@@ -63,19 +34,53 @@ h4 {
 @import "footer";
 
 /*********************************** GENERALES EXCLUSIVOS DE INDEX ***********************************/
+.intro {
+  width: 75vw;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    margin-top: 3rem;
+  }
+  p {
+    padding-top: 2rem;
+    font-family: 'Beau Rivage', cursive;
+    font-size: 5rem;
+    text-align: center;
+    border-bottom: 2px solid $color-secundario;
+    margin-bottom: 2rem;
+  }
+}
+
+.parrafoSec {
+  width: 75vw;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom:2rem;
+  font-size: 2rem;
+  text-align: center;
+  border-top: 2px solid $color-secundario;
+  border-bottom: 2px solid $color-secundario;
+  padding: 2rem;
+}
 
 .visionMision {
   display: flex;
   justify-content: space-evenly;
-  margin: 1rem;
-  border-top: 3px solid $color-principal;
-  border-bottom: 3px solid $color-principal;
+  margin: 3rem;
 }
 
 .cajaVm {
+  max-width: 40vw;
   border: 2px solid $color-principal;
   border-radius: 10px;
-  box-shadow: 4px 4px 10px;
+  box-shadow: 3px 3px 30px;
   margin: 2rem;
   text-align: center;
 
@@ -87,46 +92,49 @@ h4 {
     padding-top: 1rem;
     padding-bottom: 1rem;
     background-color: $color-principal;
-    color: black;
+    color: $color-secundario;
   }
 
   p {
     text-align: center;
     font-size: 1.4rem;
     font-weight: bold;
-    text-align: justify;
+    text-align: center;
     padding: 1.5rem;
   }
 }
 
 .sectores {
-  margin-top: 2px;
-  margin-bottom: 40px;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
   display: flex;
   justify-content: space-evenly;
 }
 
 .caja {
-  margin: 5px;
-  padding: 5px;
-  width: 150px;
+  margin: .5rem;
+  width: 16rem;
   border: 1px solid $color-principal;
   border-radius: 4px;
   text-align: center;
-  font-size: 12px;
-  box-shadow: 3px 3px 10px;
-}
+  box-shadow: 3px 3px 15px;
 
-.pSector {
-  padding-top: 2px;
-  padding-bottom: 5px;
-}
-
-.caja {
   h3 {
-    padding-bottom: 2px;
+    background-color: $color-principal;
+    color: $color-secundario;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding-top: 7px;
+    padding-bottom: 7px;
     display: flex;
     justify-content: center;
+  }
+
+  p {
+    font-size: 1.2rem;
+    padding: 3px .5rem;
+    color: #000;
+    text-align: center;
   }
 }
 

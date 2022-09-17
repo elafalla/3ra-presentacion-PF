@@ -10,38 +10,42 @@
     content="Sitio corporativo destinado a dar a conocer el alcance de los servicios que ofrecemos como empresa" />
   <!-- FAVICON -->
   <link rel="shortcut icon" href="img/Logo_1.png" type="image/x-icon" />
+  <!-- CSS BOOTSTRAP-->
+  <link href="/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   <!-- CSS -->
+  <link rel="preload" href="css/estilo.css" as="style">
   <link rel="stylesheet" href="css/estilo.css" />
 </head>
 
 <body>
-  <div class="membrete">
-    <h1>Servind</h1>
-    <p>Servicios industriales</p>
-  </div>
 
   <!-- ENCABEZADO CON IMAGEN PRINCIPAL - HEADER-->
   <header class="header">
-<button>
-  <a href="./html/contacto.html">Contáctenos</a>
-</button>
+    <section class="header-bg">
+      <h1>Servind</h1>
+      <p>Servicios industriales</p>
+
+      <div class="flex-boton">
+        <a href="./html/contacto.html">Contáctenos</a>
+      </div>
+
+      <div class="contenido-header">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="52" height="52"
+          viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFc107" fill="none" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <circle cx="12" cy="11" r="3" />
+          <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+        </svg>
+        <p>Mendoza, Argentina
+
+        </p>
+      </div>
+    </section>
   </header>
-
-  <div>
-    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-current-location" width="68" height="68"
-      viewBox="0 0 24 24" stroke-width="2" stroke="#FFc107" fill="none" stroke-linecap="round" stroke-linejoin="round">
-      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-      <circle cx="12" cy="12" r="3" />
-      <circle cx="12" cy="12" r="8" />
-      <line x1="12" y1="2" x2="12" y2="4" />
-      <line x1="12" y1="20" x2="12" y2="22" />
-      <line x1="20" y1="12" x2="22" y2="12" />
-      <line x1="2" y1="12" x2="4" y2="12" />
-    </svg>
-    <p>Mendoza, Argentina</p>
-  </div>
-
   <!-----------------  FIN HEADER ----------------->
+
   <!-- NAVBAR -->
   <div class="nav-fondo">
     <nav class="navbar contenedor">
@@ -53,45 +57,36 @@
     </nav>
   </div>
   <!-- FIN NAVBAR -->
-  <section>
-    <p class="parrafoPpal">
-      Somos una empresa dedicada a la ingeniería, mantenimiento, montajes y
-      automatización de instalaciones industriales que incluye la
-      comercialización de productos específicos, con el propósito de brindar a
-      todo el país y países limítrofes, soluciones industriales integrales.
-      Nuestros más de 40 años en el rubro, nos avalan como la compañía líder en
-      soluciones industriales a nivel nacional, el mejor aliado que cada uno de
-      nuestros clientes busca ante cada nuevo desafío que la industria, en
-      continuo avance, pone en su camino. La diversidad de servicios disponibles
-      nos pone al frente ante cada competencia profesional. Prestamos servicios
-      completos del tipo llave en mano que incluyen mano de obra, herramientas,
-      maquinarías, ingeniería, dirección técnica y supervisión de tareas entre
-      muchas otras. Nuestro principal objetivo es el de brindar la solución
-      particular que cada cliente y situación requiere. Nuestro equipo de
-      profesionales analiza en detalle cada escenario que se presenta, evalúa y
-      planifica la solución específica para cada caso. El avance continuo de la
-      tecnología nos obliga a estar en permanente capacitación y constante
-      desarrollo de nuevas prácticas con el objetivo de ofrecer al mercado las
-      soluciones mas innovadoras. Nuestra experiencia polirubro nos permite
-      abarcar el mercado industrial en su totalidad sin dejar sector sin cubrir.
-      Contamos con áreas especializadas en cada sector industrial, desde
-      procesos continuos hasta fabricaciones a desarrollo bajo pedido.
+  <section class="intro">
+    <h2>-Empresa-</h2>
+    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-building-factory" width="40" height="40"
+      viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFc107" fill="none" stroke-linecap="round"
+      stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M4 21c1.147 -4.02 1.983 -8.027 2 -12h6c.017 3.973 .853 7.98 2 12" />
+      <path d="M12.5 13h4.5c.025 2.612 .894 5.296 2 8" />
+      <path
+        d="M9 5a2.4 2.4 0 0 1 2 -1a2.4 2.4 0 0 1 2 1a2.4 2.4 0 0 0 2 1a2.4 2.4 0 0 0 2 -1a2.4 2.4 0 0 1 2 -1a2.4 2.4 0 0 1 2 1" />
+      <line x1="3" y1="21" x2="22" y2="21" />
+    </svg>
+    <p>
+      Somos una empresa en constante desarrollo y con el firme propósito de incrementar nuestra eficiencia para así
+      proporcionar un servicio reconocido y recomendado por nuestros clientes.
     </p>
   </section>
+
   <div class="img">
     <img src="img/img_pres2.png" alt="pres2" width="70%" />
   </div>
 
   <p class="parrafoSec">
-    Desde nuestros orígenes trabajamos con el firme propósito de convertirnos
-    en la empresa líder del sector y hoy nos enorgullece ubicarnos en dicho
-    segmento debido a los logros y objetivos cumplidos, con altos niveles de
-    Seguridad, Calidad, Tecnología y Recursos.
+    Desarrollamos proyectos integrales desde su fase conceptual hasta la ingeniería de detalle, enfocándonos en
+    colaborar activamente con nuestros clientes, ayudándolos a optimizar sus costos y hacer mas rentables sus proyectos.
   </p>
 
   <section class="visionMision">
     <div class="cajaVm">
-      <h3>Vision</h3>
+      <h3>Visión</h3>
       <p>
         Ser la empresa de servicios en el rubro, preferida por nuestros
         clientes por los productos y servicios que ofrecemos, reconocida por
@@ -101,7 +96,7 @@
     </div>
 
     <div class="cajaVm">
-      <h3>Mision</h3>
+      <h3>Misión</h3>
       <p>
         Desempeñarnos en forma segura y rentable, con responsabilidad social y
         ambiental, en el sector montaje y mantenimiento industrial, cumpliendo
@@ -111,7 +106,7 @@
     </div>
   </section>
 
-  <p class="parrafo">
+  <p class="parrafoSec">
     Esta propuesta única de servicios asociados, basada en obtener resultados
     concretos para el cliente, mejorando sus estándares de rentabilidad y
     productividad, nos proyecta a ocupar un lugar privilegiado en el mercado.
@@ -120,12 +115,24 @@
     seguridad total todos los días del año.
   </p>
 
-  <h2 class="tituloPag">Sectores que abastecemos</h2>
+  <section class="intro">
+    <h2>-Sectores que abastecemos-</h2>
+    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hierarchy-2" width="40" height="40"
+      viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFc107" fill="none" stroke-linecap="round"
+      stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 3h4v4h-4z" />
+      <path d="M3 17h4v4h-4z" />
+      <path d="M17 17h4v4h-4z" />
+      <path d="M7 17l5 -4l5 4" />
+      <line x1="12" y1="7" x2="12" y2="13" />
+    </svg>
+  </section>
 
   <section class="sectores">
     <div class="caja">
       <h3>Transporte</h3>
-      <p class="pSector">
+      <p>
         Servicios de modificación y personalización de unidades de transporte
         de cargas, según requerimientos específicos.
       </p>
@@ -133,7 +140,7 @@
 
     <div class="caja">
       <h3>Naval</h3>
-      <p class="pSector">
+      <p>
         Servicios varios para la industria naval que abarcan desde
         reparaciones hasta modificaciones específicas.
       </p>
@@ -141,7 +148,7 @@
 
     <div class="caja">
       <h3>Oil & Gas</h3>
-      <p class="pSector">
+      <p>
         Proyectos llave en mano, montajes y supervisiones para la
         implementación de soluciones tecnológicas según las normas espécíficas
         del rubro.
@@ -150,7 +157,7 @@
 
     <div class="caja">
       <h3>Metalmecánica</h3>
-      <p class="pSector">
+      <p>
         Proyectos metalmecánicos integrales, estructuras soldadas y mecanizado
         de grandes piezas.
       </p>
@@ -158,7 +165,7 @@
 
     <div class="caja">
       <h3>Salud</h3>
-      <p class="pSector">
+      <p>
         Instalaciones y tendidos de cañerías de oxígeno, aire y agua con las
         normas de asepsia requeridas por los órganos de control.
       </p>
@@ -166,7 +173,7 @@
 
     <div class="caja">
       <h3>Agro</h3>
-      <p class="pSector">
+      <p>
         Soluciones integrales para el agro, patentamiento de nuevos módulos
         productivos, reparación y fabricación de componentes específicos.
       </p>
@@ -179,44 +186,43 @@
   </div>
 
   <!-- FOOTER -->
-  <div class="container-fluid expand-lg">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-4 border-top">
-      <div class="col-md-4 d-flex align-items-center">
-        <span class="mb-0 mb-md-0">&copy; <a href="./html/desarrollador.html">EGL</a> Desarrollo Web.
-          <p>Todos los derechos reservados</p>
-        </span>
-      </div>
+  <footer>
+    <p>Síganos en nuestras redes</p>
+    <div class="footer-redes">
+      <a href="https://www.linkedin.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-brand-linkedin" width="28" height="28" viewBox="0 0 24 24"
+          stroke-width="1.5" stroke="#FFc107" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <rect x="4" y="4" width="16" height="16" rx="2" />
+          <line x1="8" y1="11" x2="8" y2="16" />
+          <line x1="8" y1="8" x2="8" y2="8.01" />
+          <line x1="12" y1="16" x2="12" y2="11" />
+          <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+        </svg></a>
 
-      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-        <p>Síganos en nuestras redes</p>
-        <li class="ms-3">
-          <a href="https://www.linkedin.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="20"
-              height="20" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-              <path
-                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
-            </svg>
-            <path
-              d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
-            </svg>
-          </a>
-        </li>
-        <li class="ms-3">
-          <a href="https://www.instagram.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="20"
-              height="20" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-              <path
-                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
-            </svg></a>
-        </li>
-        <li class="ms-3">
-          <a href="https://www.facebook.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="20"
-              height="20" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-              <path
-                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-            </svg></a>
-        </li>
-      </ul>
-    </footer>
-  </div>
+      <a href="https://www.instagram.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-brand-instagram" width="28" height="28" viewBox="0 0 24 24"
+          stroke-width="1.5" stroke="#FFc107" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <rect x="4" y="4" width="16" height="16" rx="4" />
+          <circle cx="12" cy="12" r="3" />
+          <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+        </svg></a>
+
+      <a href="https://www.facebook.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-brand-facebook" width="28" height="28" viewBox="0 0 24 24"
+          stroke-width="1.5" stroke="#FFc107" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+        </svg></a>
+    </div>
+    <div class="copyright">
+      <span>
+        &#169;2022 <a href="./html/desarrollador.html">EGL</a> Desarrollo Web.
+      </span>
+      <p>Todos los derechos reservados</p>
+    </div>
+  </footer>
   <!-- FIN FOOTER -->
 
   <!-- JavaScript Bundle with Popper -->
