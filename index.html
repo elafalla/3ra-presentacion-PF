@@ -10,9 +10,6 @@
     content="Sitio corporativo destinado a dar a conocer el alcance de los servicios que ofrecemos como empresa" />
   <!-- FAVICON -->
   <link rel="shortcut icon" href="img/Logo_1.png" type="image/x-icon" />
-  <!-- CSS BOOTSTRAP-->
-  <link href="/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   <!-- CSS -->
   <link rel="preload" href="css/estilo.css" as="style">
   <link rel="stylesheet" href="css/estilo.css" />
@@ -27,7 +24,7 @@
       <p>Servicios industriales</p>
 
       <div class="flex-boton">
-        <a href="./html/contacto.html">Contáctenos</a>
+      <a href="./html/contacto.html">Contáctenos</a>
       </div>
 
       <div class="contenido-header">
@@ -38,27 +35,25 @@
           <circle cx="12" cy="11" r="3" />
           <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
         </svg>
-        <p>Mendoza, Argentina
-
-        </p>
+        <p>Mendoza, Argentina</p>
       </div>
     </section>
   </header>
   <!-----------------  FIN HEADER ----------------->
 
-  <!-- NAVBAR -->
+  <!-----------------  NAVBAR ------------------>
   <div class="nav-fondo">
     <nav class="navbar contenedor">
       <a href="./index.html">Inicio</a>
       <a href="./html/quienes-somos.html">Nosotros</a>
       <a href="./html/servicios.html">Servicios</a>
-      <a href="./html/faq.html">FAQ</a>
+      <a href="./html/faq.html">Faq</a>
       <a href="./html/contacto.html">Contáctenos</a>
     </nav>
   </div>
-  <!-- FIN NAVBAR -->
-  <section class="intro">
-    <h2>-Empresa-</h2>
+  <!-------------------- FIN NAVBAR --------------------------->
+  <main class="main">
+    <h2>Empresa</h2>
     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-building-factory" width="40" height="40"
       viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFc107" fill="none" stroke-linecap="round"
       stroke-linejoin="round">
@@ -70,10 +65,10 @@
       <line x1="3" y1="21" x2="22" y2="21" />
     </svg>
     <p>
-      Somos una empresa en constante desarrollo y con el firme propósito de incrementar nuestra eficiencia para así
+      En búsqueda constante del desarrollo con el propósito de incrementar nuestra eficiencia y así
       proporcionar un servicio reconocido y recomendado por nuestros clientes.
     </p>
-  </section>
+  </main>
 
   <div class="img">
     <img src="img/img_pres2.png" alt="pres2" width="70%" />
@@ -115,8 +110,8 @@
     seguridad total todos los días del año.
   </p>
 
-  <section class="intro">
-    <h2>-Sectores que abastecemos-</h2>
+  <section class="main">
+    <h2>Sectores que abastecemos</h2>
     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hierarchy-2" width="40" height="40"
       viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFc107" fill="none" stroke-linecap="round"
       stroke-linejoin="round">
@@ -142,7 +137,7 @@
       <h3>Naval</h3>
       <p>
         Servicios varios para la industria naval que abarcan desde
-        reparaciones hasta modificaciones específicas.
+        reparaciones hasta modificaciones específicas en embarcaciones y componentes relacionados.
       </p>
     </div>
 
@@ -158,8 +153,8 @@
     <div class="caja">
       <h3>Metalmecánica</h3>
       <p>
-        Proyectos metalmecánicos integrales, estructuras soldadas y mecanizado
-        de grandes piezas.
+        Proyectos metalmecánicos integrales que abarcan estructuras soldadas, mecanizado
+        de grandes piezas y montaje de equipos.
       </p>
     </div>
 
@@ -181,15 +176,19 @@
   </section>
 
   <div class="logo_wapp">
-    <a href="https://api.whatsapp.com/send?phone=5492614197358" target="_blank"><img src="../img/logo_whatsapp.png"
-        alt="logowapp" /></a>
+    
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00b341" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+      <path d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1" />
+    </svg>
   </div>
 
   <!-- FOOTER -->
   <footer>
-    <p>Síganos en nuestras redes</p>
-    <div class="footer-redes">
-      <a href="https://www.linkedin.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+    <section class="footer-redes">
+      <a href="https://www.linkedin.com" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg"
           class="icon icon-tabler icon-tabler-brand-linkedin" width="28" height="28" viewBox="0 0 24 24"
           stroke-width="1.5" stroke="#FFc107" fill="none" stroke-linecap="round" stroke-linejoin="round">
           <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -198,37 +197,39 @@
           <line x1="8" y1="8" x2="8" y2="8.01" />
           <line x1="12" y1="16" x2="12" y2="11" />
           <path d="M16 16v-3a2 2 0 0 0 -4 0" />
-        </svg></a>
+        </svg>
+      </a>
 
-      <a href="https://www.instagram.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+      <a href="https://www.instagram.com" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg"
           class="icon icon-tabler icon-tabler-brand-instagram" width="28" height="28" viewBox="0 0 24 24"
           stroke-width="1.5" stroke="#FFc107" fill="none" stroke-linecap="round" stroke-linejoin="round">
           <path stroke="none" d="M0 0h24v24H0z" fill="none" />
           <rect x="4" y="4" width="16" height="16" rx="4" />
           <circle cx="12" cy="12" r="3" />
           <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
-        </svg></a>
+        </svg>
+      </a>
 
-      <a href="https://www.facebook.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+      <a href="https://www.facebook.com" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg"
           class="icon icon-tabler icon-tabler-brand-facebook" width="28" height="28" viewBox="0 0 24 24"
           stroke-width="1.5" stroke="#FFc107" fill="none" stroke-linecap="round" stroke-linejoin="round">
           <path stroke="none" d="M0 0h24v24H0z" fill="none" />
           <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
-        </svg></a>
-    </div>
+        </svg>
+      </a>
+    </section>
+
     <div class="copyright">
       <span>
-        &#169;2022 <a href="./html/desarrollador.html">EGL</a> Desarrollo Web.
+        &#169;2022 <a href="./html/desarrollador.html" target="_blank">EGL</a> Desarrollo Web.
       </span>
       <p>Todos los derechos reservados</p>
     </div>
   </footer>
   <!-- FIN FOOTER -->
 
-  <!-- JavaScript Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-    crossorigin="anonymous"></script>
 </body>
 
 </html>

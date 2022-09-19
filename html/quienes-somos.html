@@ -18,10 +18,21 @@
 <body>
   <!-- ENCABEZADO CON IMAGEN PRINCIPAL -->
   <header class="header">
-    <div>
+    <section class="header-bg">
       <h1>SERVIND</h1>
       <p>Servicios industriales</p>
-    </div>
+
+      <div class="contenido-header">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="52" height="52"
+          viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFc107" fill="none" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <circle cx="12" cy="11" r="3" />
+          <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+        </svg>
+        <p>Mendoza, Argentina</p>
+      </div>
+    </section>
   </header>
   <!-- NAVBAR -->
   <div class="nav-fondo">
@@ -29,96 +40,95 @@
       <a href="../index.html">Inicio</a>
       <a href="./quienes-somos.html">Nosotros</a>
       <a href="./servicios.html">Servicios</a>
-      <a href="./faq.html">FAQ</a>
+      <a href="./faq.html">Faq</a>
       <a href="./contacto.html">Contáctenos</a>
     </nav>
   </div>
   <!-- FIN NAVBAR -->
 
-  <section>
-    <h2 class="tituloSeccion">Nuestros inicios</h2>
-
-    <section class="gridPadre">
-      <section class="parrafo1">
-        <p>
-          Nuestra historia se remonta a principios de 1974, cuando Don Ramón
-          Valdez buscando un cambio de aire en sus tareas cotidianas de
-          trabajar la tierra, comienza a realizar, por sus propios medios, la
-          reparación de sus maquinarias. En muchas ocasiones, la falta de
-          repuestos y la lejanía a la zona urbana de ciudad lo obligaba a
-          inventar soluciones para salir del paso y poco a poco se fue dando
-          cuenta que sus soluciones no eran paliativas como las consideraba en
-          principio, sino que daban muy buenos resultados y duraban en el
-          tiempo a pesar de la exigente operación diaria. Poco a poco la voz
-          se fue corriendo entre las tierras aledañas y cada tanto los vecinos
-          solicitaban de su ayuda para solucionar sus inconvenientes. Al poco
-          tiempo, era tal la demanda de ayuda que poco tiempo le quedaba para
-          trabajar sus campos y fue deshaciéndose de sus tierras para empezar
-          a montar su taller. En 1985 su taller ya tenía un nombre reconocido
-          en la zona y era visitado por trabajadores de todos los rubros que
-          solicitaban de sus servicios para diversas necesidades. Su sobrino
-          Carlos, comenzó a trabajar con él y al poco tiempo sumaron dos
-          personas más para ayudarlos en sus tareas. Con el paso del tiempo
-          fueron incursionando en otros rubros y en 1992 trasladan sus
-          instalaciones y nace ServInd con una variedad de servicios que la
-          posicionaron como la preferida en varias ciudades a la redonda. El
-          volumen de trabajo fue tal, que los obligó a incluir sistemas
-          informáticos para el manejo de la información. Esta tecnología
-          incorporada trajo consigo la llegada de profesionales y la creación
-          del departamento de ingeniería para el desarrollo de proyectos de
-          acuerdo a los requerimientos de los clientes más exigentes. El
-          desarrollo de grandes proyectos generó la necesidad de mano de obra
-          especializada en tereas técnicas de campo, lo cual no era tarea
-          fácil. El problema a solucionar era ahora, como hacer realidad los
-          proyectos que nacían en pantallas y escritorios de oficina.
-        </p>
-      </section>
-
-      <div class="imagenQs">
-        <div class="imagen1">
-          <img src="../img/Inicios1.jpg" alt="inicios1" width="100%" />
-        </div>
-      </div>
-      <div class="imagenQs">
-        <div class="imagen2">
-          <img src="../img/Inicios2.jpg" alt="inicios2" width="100%" />
-        </div>
-      </div>
-      <section class="parrafo2">
-        <p>
-          Para solucionar esto, ServInd creo dentro de su compañía un sector
-          de capacitación para formar a sus operarios y de a poco se fue
-          creando su propio equipo de operarios para hacer realidad sus
-          proyectos. Don Ramón Valdez poco a poco fue perdiendo fuerzas y
-          debió dejar de lado muchas de sus tareas como mando máximo de
-          ServInd. En 2008 la compañía quedó al mando de su sobrino, Carlos
-          Villagrán quien hasta el día de hoy lleva las riendas de la compañía
-          con una gestión ejemplar y un crecimiento constante. Hoy ServInd
-          cuenta con un predio de 6 hectáreas que incluyen 4 plantas
-          productivas y sus oficinas.
-        </p>
-        <p>Actualmente, somos una empresa dedicada
-          a la ingeniería, fabricación, construcción y montaje de estructuras
-          metálicas. Hemos desarrollado un gran equipo de trabajo que nos
-          permite realizar proyectos desde su diseño hasta su puesta en
-          marcha. Como parte de nuestra cartera de clientes contamos con las
-          principales empresas nacionales e internacionales en el sector
-          minero, petróleo, oil & gas y la industria vitivinícola entre otras
-          muchas. Nuestra empresa se desarrolla constantemente y nos
-          potenciamos con nuevos desafíos día a día, impulsados por el
-          crecimiento de la industria en la región.</p>
-      </section>
-    </section>
+  <section class="introNos">
+    <h2>Un poco de nuestra historia</h2>
+    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-history" width="40" height="40"
+      viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFC107" fill="none" stroke-linecap="round"
+      stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <polyline points="12 8 12 12 14 14" />
+      <path d="M3.05 11a9 9 0 1 1 .5 4m-.5 5v-5h5" />
+    </svg>
+    <p>Nuestra historia se remonta a principios de 1974, cuando Don Ramón
+      Valdez buscando un cambio de aire en sus tareas cotidianas de
+      trabajar la tierra, comienza sin darse cuenta a construir lo que hoy es Servind. El mejor aliado del cliente ante
+      cada desafio que propone el mercado en constante evolución</p>
   </section>
 
+  <div class="gridPadre">
+    <p class="parrafo1">
+      El pueblo de Tangamandapio representaba una especie de polo agrario para la provincia, pero la distancia que lo
+      separaba de la gran ciudad, lo convertían en vulnerable frente al desarrollo de la actividad. La falta de
+      repuestos e insumos en la zona obligaban a Don Ramón a inventar soluciones para salir del paso. Poco a poco fue
+      notando que sus soluciones no eran paliativas como las consideraba en principio, sino que daban muy buenos
+      resultados y duraban en el tiempo, a pesar de la exigente operación diaria.
+      El boca en boca no tardó en llegar y Don Ramón fue ganando protagonismo con sus reparaciones. Al poco tiempo, era
+      tal la demanda de ayuda que fue reemplazando su actividad diaria y fue deshaciéndose de sus tierras para empezar a
+      montar su taller.
+      En 1985 su taller ya tenía un nombre reconocido en la zona y era visitado por trabajadores de todos los rubros que
+      solicitaban de sus servicios para diversas necesidades. Su sobrino Carlos, comenzó a trabajar con él y al poco
+      tiempo sumaron dos personas más para ayudarlos en sus tareas.
+      Con el paso del tiempo fueron incursionando en otros rubros y en 1992 trasladan sus instalaciones y nace ServInd
+      con una variedad de servicios que la posicionaron como la preferida en varias ciudades a la redonda. El
+      volumen de trabajo fue tal, que los obligó a incluir sistemas informáticos para el manejo de la información. Esta
+      tecnología incorporada trajo consigo la llegada de profesionales y la creación del departamento de ingeniería para
+      el desarrollo de proyectos de acuerdo a los requerimientos de los clientes más exigentes. El
+      desarrollo de grandes proyectos generó la necesidad de mano de obra especializada en tereas técnicas de campo, lo
+      cual no era tarea fácil. El problema a solucionar era ahora, como hacer realidad los proyectos que nacían en
+      pantallas y escritorios de oficina.
+    </p>
+
+    <img class="imagen01" src="../img/Inicios1.jpg" alt="inicios1" />
+
+    <p class="parrafo2">
+      Para solucionar esto, ServInd creo dentro de su compañía un sector de capacitación para formar a sus operarios y
+      de a poco se fue creando su propio equipo de operarios para hacer realidad sus proyectos. Don Ramón Valdez poco a
+      poco fue perdiendo fuerzas y debió dejar de lado muchas de sus tareas como mando máximo de ServInd. En 2008 la
+      compañía quedó al mando de su sobrino, Carlos Villagrán quien hasta el día de hoy lleva las riendas de la compañía
+      con una gestión ejemplar y un crecimiento constante. Hoy ServInd cuenta con un predio de 6 hectáreas que incluyen
+      4 plantas productivas y sus oficinas.
+      Hoy somos una empresa dedicada a la ingeniería, mantenimiento, montajes y automatización de instalaciones
+      industriales que incluye la comercialización de productos específicos, con el propósito de brindar a todo el país
+      y países limítrofes, soluciones industriales integrales.
+    </p>
+
+    <img class="imagen02" src="../img/Inicios2.jpg" alt="inicios2" />
+  </div>
+
+  <p class="parrafo3">Actualmente, somos una empresa dedicada a la ingeniería, fabricación, construcción y montaje de
+    estructuras metálicas. Hemos desarrollado un gran equipo de trabajo que nos permite realizar proyectos desde su
+    diseño hasta su puesta en marcha. Como parte de nuestra cartera de clientes contamos con las principales empresas
+    nacionales e internacionales en el sector minero, petróleo, oil & gas y la industria vitivinícola entre otras
+    muchas. Nuestra empresa se desarrolla constantemente y nos potenciamos con nuevos desafíos día a día, impulsados por
+    el crecimiento de la industria en la región.</p>
+
+  <img class="imagen03" src="../img/Panoramica.jpg" alt="inicios3">
+
+  <p class="parrafo4">Nuestros más de 40 años en el rubro, nos avalan como la compañía líder en soluciones industriales a nivel nacional, el mejor aliado que cada uno de nuestros clientes busca ante cada nuevo desafío que la industria, en continuo avance, pone en su camino.</p>
+
+
+
+
   <div class="logo_wapp">
-    <a href="https://api.whatsapp.com/send?phone=5492614197358" target="_blank"><img src="../img/logo_whatsapp.png"
-        alt="logowapp" width="50%" /></a>
+    <a href="https://api.whatsapp.com/send?phone=5492614197358" target="_blank">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="52" height="52"
+        viewBox="0 0 24 24" stroke-width="1.5" stroke="#00b341" fill="none" stroke-linecap="round"
+        stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+        <path d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1" />
+      </svg>
+    </a>
   </div>
 
   <!-- FOOTER -->
   <footer>
-    <p>Síganos en nuestras redes</p>
     <div class="footer-redes">
       <a href="https://www.linkedin.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
           class="icon icon-tabler icon-tabler-brand-linkedin" width="28" height="28" viewBox="0 0 24 24"

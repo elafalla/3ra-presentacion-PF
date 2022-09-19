@@ -17,10 +17,21 @@
 <body>
   <!-- ENCABEZADO CON IMAGEN PRINCIPAL -->
   <header class="header">
-    <div>
+    <section class="header-bg">
       <h1>SERVIND</h1>
       <p>Servicios industriales</p>
-    </div>
+
+      <div class="contenido-header">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="52" height="52"
+          viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFc107" fill="none" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <circle cx="12" cy="11" r="3" />
+          <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+        </svg>
+        <p>Mendoza, Argentina</p>
+      </div>
+    </section>
   </header>
   <!-- NAVBAR -->
   <div class="nav-fondo">
@@ -28,13 +39,21 @@
       <a href="../index.html">Inicio</a>
       <a href="./quienes-somos.html">Nosotros</a>
       <a href="./servicios.html">Servicios</a>
-      <a href="./faq.html">FAQ</a>
+      <a href="./faq.html">Faq</a>
       <a href="./contacto.html">Contáctenos</a>
     </nav>
   </div>
   <!-- FIN NAVBAR -->
 
-  <h2 class="tituloPag">Preguntas frecuentes</h2>
+  <section class="tituloFaq">
+    <h2>Preguntas frecuentes</h2>
+    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-question-mark" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFC107" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <path d="M8 8a3.5 3 0 0 1 3.5 -3h1a3.5 3 0 0 1 3.5 3a3 3 0 0 1 -2 3a3 4 0 0 0 -2 4" />
+      <line x1="12" y1="19" x2="12" y2="19.01" />
+    </svg>
+  </section>
+  
 
   <section class="faq">
     <ol class="faqLista">
@@ -128,7 +147,7 @@
       </p>
       <li>
         <p class="faqPregunta">
-          ¿Fabrican piezas según plano?
+          ¿Fabrican piezas según ingeniería de terceros?
         </p>
       </li>
       <p class="faqRespuesta">
@@ -140,24 +159,31 @@
 
   <section class="faqContacto">
     <p class="parrafoContacto">
-      Esperamos haber resuelto sus inquietudes con nuestras respuestas. En
-      caso que requiera información extra, por favor comunicarse con nosotros
+      Esperamos haber resuelto sus inquietudes con nuestras respuestas.</p>
+      <p class="parrafoContacto">
+      En caso de requerir información extra, por favor no dude en comunicarse con nosotros
       mediante el formulario de contacto, haciendo click
       <a href="contacto.html">aquí</a>
     </p>
   </section>
 
   <div class="logo_wapp">
-    <a href="https://api.whatsapp.com/send?phone=5492614197358" target="_blank"><img src="../img/logo_whatsapp.png"
-        alt="logowapp" width="50%" />
+    <a href="https://api.whatsapp.com/send?phone=5492614197358" target="_blank">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="52" height="52"
+        viewBox="0 0 24 24" stroke-width="1.5" stroke="#00b341" fill="none" stroke-linecap="round"
+        stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+        <path d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1" />
+      </svg>
     </a>
   </div>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>Síganos en nuestras redes</p>
-    <div class="footer-redes">
-      <a href="https://www.linkedin.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+   <!-- FOOTER -->
+   <footer>
+    <section class="footer-redes">
+      <a href="https://www.linkedin.com" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg"
           class="icon icon-tabler icon-tabler-brand-linkedin" width="28" height="28" viewBox="0 0 24 24"
           stroke-width="1.5" stroke="#FFc107" fill="none" stroke-linecap="round" stroke-linejoin="round">
           <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -166,27 +192,33 @@
           <line x1="8" y1="8" x2="8" y2="8.01" />
           <line x1="12" y1="16" x2="12" y2="11" />
           <path d="M16 16v-3a2 2 0 0 0 -4 0" />
-        </svg></a>
+        </svg>
+      </a>
 
-      <a href="https://www.instagram.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+      <a href="https://www.instagram.com" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg"
           class="icon icon-tabler icon-tabler-brand-instagram" width="28" height="28" viewBox="0 0 24 24"
           stroke-width="1.5" stroke="#FFc107" fill="none" stroke-linecap="round" stroke-linejoin="round">
           <path stroke="none" d="M0 0h24v24H0z" fill="none" />
           <rect x="4" y="4" width="16" height="16" rx="4" />
           <circle cx="12" cy="12" r="3" />
           <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
-        </svg></a>
+        </svg>
+      </a>
 
-      <a href="https://www.facebook.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+      <a href="https://www.facebook.com" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg"
           class="icon icon-tabler icon-tabler-brand-facebook" width="28" height="28" viewBox="0 0 24 24"
           stroke-width="1.5" stroke="#FFc107" fill="none" stroke-linecap="round" stroke-linejoin="round">
           <path stroke="none" d="M0 0h24v24H0z" fill="none" />
           <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
-        </svg></a>
-    </div>
+        </svg>
+      </a>
+    </section>
+
     <div class="copyright">
       <span>
-        &#169;2022 <a href="./html/desarrollador.html">EGL</a> Desarrollo Web.
+        &#169;2022 <a href="./html/desarrollador.html" target="_blank">EGL</a> Desarrollo Web.
       </span>
       <p>Todos los derechos reservados</p>
     </div>

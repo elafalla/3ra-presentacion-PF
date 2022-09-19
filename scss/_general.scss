@@ -6,42 +6,22 @@
   border-left: 5px solid $color-secundario;
 }
 
-/* h3 {
-  text-align: left;
-  color: black;
-  font-weight: bold;
-  font-size: large;
-} */
-
-/* h4 {
-  text-align: left;
-  color: black;
-  font-size: medium;
-} */
-
 .logo_wapp {
   position: fixed;
   right: 1rem;
-  top: 38rem;
-  opacity: 70%;
-
-  img {
-    width: 60px;
-    height: auto;
-  }
+  top: 10rem;
 }
 
-@import "footer";
-
 /*********************************** GENERALES EXCLUSIVOS DE INDEX ***********************************/
-.intro {
+
+.main {
   width: 75vw;
   margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-    
+
   h2 {
     text-align: center;
     text-transform: uppercase;
@@ -50,8 +30,8 @@
   }
   p {
     padding-top: 2rem;
-    font-family: 'Beau Rivage', cursive;
-    font-size: 5rem;
+    font-family: "Beau Rivage", cursive;
+    font-size: 4rem;
     text-align: center;
     border-bottom: 2px solid $color-secundario;
     margin-bottom: 2rem;
@@ -62,8 +42,8 @@
   width: 75vw;
   margin: auto;
   margin-top: 2rem;
-  margin-bottom:2rem;
-  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
   text-align: center;
   border-top: 2px solid $color-secundario;
   border-bottom: 2px solid $color-secundario;
@@ -112,7 +92,7 @@
 }
 
 .caja {
-  margin: .5rem;
+  margin: 2rem;
   width: 16rem;
   border: 1px solid $color-principal;
   border-radius: 4px;
@@ -132,7 +112,8 @@
 
   p {
     font-size: 1.2rem;
-    padding: 3px .5rem;
+    font-weight: bold;
+    padding: 0.7rem 0.5rem;
     color: #000;
     text-align: center;
   }
@@ -146,13 +127,39 @@
 
 /*********************************** GENERALES EXCLUSIVOS DE NOSOTROS ***********************************/
 
+.introNos {
+  width: 75vw;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    margin-top: 3rem;
+  }
+
+  p {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    font-family: "Beau Rivage", cursive;
+    font-size: 3rem;
+    text-align: center;
+    border-bottom: 2px solid $color-secundario;
+    margin-bottom: 2rem;
+  }
+}
+
 @mixin parrafos {
   margin: 0.7rem;
   padding: 3pt;
   height: auto;
   width: auto;
   text-align: justify;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 
 .parrafo1 {
@@ -170,17 +177,22 @@
   box-shadow: 2px 2px 8px;
   height: fit-content;
   width: fit-content;
-  margin: 0.7rem;
+  padding: 1rem;
+  margin: 1rem;
 }
 
-.imagen1 {
+.imagen01 {
   grid-area: imagen1;
   @include imgNosotros;
 }
 
-.imagen2 {
+.imagen02 {
   grid-area: imagen2;
   @include imgNosotros;
+}
+
+.imagen03 {
+  width: 100%;
 }
 
 .gridPadre {
@@ -191,7 +203,47 @@
   gap: 15px;
 }
 
+@mixin parrafo3-4 {
+  width: 75vw;
+  margin: auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-family: "Beau Rivage", cursive;
+  font-size: 2.7rem;
+  text-align: center;
+  border-top: 2px solid $color-secundario;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.parrafo3 {
+  @include parrafo3-4;
+  border-bottom: 2px solid $color-secundario;
+}
+
+.parrafo4 {
+  @include parrafo3-4;
+}
+
 /*********************************** GENERALES EXCLUSIVOS DE SERVICIOS ***********************************/
+
+.tituloSrv {
+  width: 75vw;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 3rem;
+  }
+}
 
 .rubroServ {
   margin-top: 30px;
@@ -199,7 +251,10 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  align-content: flex-start;
+  border-bottom: 2px solid $color-secundario;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+  background-color: $color-terciario;
 }
 
 .cajaServ {
@@ -209,80 +264,116 @@
   width: 160px;
   border: 1px solid $color-principal;
   border-radius: 4px;
-  text-align: center;
-  font-size: 12px;
   box-shadow: 3px 3px 10px;
   background-color: white;
+  position: relative;
 
   h3 {
+    text-align: center;
+    font-size: 1.5rem;
     padding-bottom: 3px;
     text-align: center;
+    font-weight: bold;
+  }
+
+  svg {
+    position: absolute;
+    top: 70px;
+    left: 50px;
   }
 }
 
+@mixin cajaParrafo {
+  width: 75vw;
+  margin: auto;
+  padding-top: 2rem;
+}
+
+.cajaParrafo1 {
+  @include cajaParrafo;
+  border-bottom: 2px solid $color-secundario;
+}
+
+.cajaParrafo2 {
+  @include cajaParrafo;
+  border-top: 2px solid $color-secundario;
+}
+
+@mixin parrafoServ {
+  text-align: center;
+  font-size: 1.8rem;
+  font-style: oblique;
+}
+
 .parrafoServ1 {
-  grid-area: parrafoServ1;
-  padding: 3pt;
-  margin: 0.5rem;
-  font-size: 10pt;
-  text-align: justify;
+  @include parrafoServ;
+  padding-bottom: 2rem;
 }
 
 .parrafoServ2 {
-  grid-area: parrafoServ2;
-  padding: 3pt;
-  margin: 0.5rem;
-  font-size: 10pt;
-  text-align: justify;
+  @include parrafoServ;
 }
 
-.parrafoServ3 {
-  grid-area: parrafoServ3;
-  padding: 3pt;
-  margin: 0.5rem;
-  font-size: 10pt;
-  text-align: justify;
-}
-
-.imgsrv {
-  grid-area: imgsrv;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  padding: 5px;
-  border: 2px solid $color-principal;
-  border-radius: 10px;
+.proyecto {
+  width: fit-content;
+  height: auto;
+  margin: 1rem;
+  padding: 1rem 0rem;
+  border: 1px solid $color-principal;
+  border-radius: 1rem;
   box-shadow: 3px 3px 10px;
-  justify-self: center;
+  background-color: $color-principal;
+
+  h4 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: $color-secundario;
+    padding-bottom: 1rem;
+  }
+
+  img {
+    border-top: 1px solid $color-secundario;
+    border-bottom: 1px solid $color-secundario;
+  }
+
+  p {
+    text-align: center;
+    font-size: 1.5rem;
+    color: $color-secundario;
+    padding-top: 1rem;
+    margin-bottom: 0;
+  }
+}
+
+.proyectosRef {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.contenedorVideo {
+  margin: 3rem 0.5rem;
+  display: flex;
+  justify-content: center;
 }
 
 .videosrv {
-  grid-area: videosrv;
   margin-top: 15px;
   margin-bottom: 15px;
   padding: 5px;
-  border: 2px solid $color-principal;
+  border: 2px solid $color-secundario;
   border-radius: 10px;
   box-shadow: 3px 3px 10px;
   width: fit-content;
-  justify-self: center;
-}
-
-.gridPadreServ {
-  display: grid;
-  gap: 10px;
-  grid-template-areas:
-    "parrafoServ1 parrafoServ1 parrafoServ1"
-    "imgsrv imgsrv imgsrv"
-    "parrafoServ2 parrafoServ2 parrafoServ2"
-    "videosrv videosrv videosrv"
-    "parrafoServ3 parrafoServ3 parrafoServ3"
-    "clientes clientes clientes";
 }
 
 aside {
-  grid-area: clientes;
   padding-top: 15px;
-  border-top: 2px solid $color-principal;
+  border-top: 2px solid $color-secundario;
   width: 700px;
   top: 0;
   bottom: 0;
@@ -290,72 +381,108 @@ aside {
   right: 0;
   margin: auto;
   margin-bottom: 3rem;
-
-  h3 {
-    text-align: center;
-    padding-bottom: 7px;
-    color: $color-principal;
-    text-transform: uppercase;
-  }
 }
 
 /*********************************** GENERALES EXCLUSIVOS DE FAQ's ***********************************/
 
+.tituloFaq {
+  width: 75vw;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 3rem;
+  }
+}
+
 .faq {
-  padding: 5px;
+  padding: 1rem;
 }
 
 .faqLista {
-  margin-left: 30px;
-  font-size: 1.5rem;
+  margin-left: 3rem;
+  font-size: 1.6rem;
   font-weight: bold;
 }
 
 .faqPregunta {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: bold;
   margin: 0;
+  text-transform: uppercase;
 }
 
 .faqRespuesta {
-  padding-top: 5px;
-  padding-left: 15px;
-  padding-bottom: 15px;
-  padding-right: 15px;
-  font-size: 1.4rem;
+  padding-top: 0.5rem;
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+  padding-right: 1.5rem;
+  margin-right: 1rem;
+  font-size: 1.5rem;
   font-style: oblique;
   text-align: justify;
   font-weight: lighter;
 }
 
 .faqContacto {
-  margin: 35px;
-  padding: 5px;
+  margin: 3.5rem;
+  padding: 0.5rem;
   border: 2px solid $color-principal;
+  background-color: $color-terciario;
   border-radius: 5px;
-  box-shadow: 3px 3px 10px;
+  box-shadow: 5px 5px 15px;
   text-align: center;
-  font-weight: bold;
-  font-size: 11pt;
+
+  p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.3rem;
+  }
 }
 
 /*********************************** GENERALES EXCLUSIVOS DE CONTACTO ***********************************/
 
-.contenedor2 {
-  background: #24303c;
-  width: 430px;
-  padding: 30px;
+.tituloCon {
+  width: 75vw;
   margin: auto;
-  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 3rem;
+  }
+}
+
+.contenedor2 {
+  background: $color-principal;
+  width: 43rem;
+  padding: 3rem;
+  margin: auto;
+  margin-top: 3rem;
   border-radius: 10px;
   box-shadow: 7px 13px 37px #000;
 
   h3 {
-    font-size: 22px;
-    margin-top: 15px;
-    margin-bottom: 10px;
+    font-size: 2.2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
     text-align: center;
-    color: white;
+    color: $color-secundario;
   }
 }
 
@@ -365,7 +492,7 @@ aside {
   padding: 10px;
   border-radius: 3px;
   margin-bottom: 20px;
-  border: 1px solid $color-principal;
+  border: 1px solid $color-secundario;
   font-size: 16px;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
@@ -375,15 +502,24 @@ aside {
   }
 }
 
+::placeholder {
+  color: #cfc17f;
+}
+
 .button {
   width: 100%;
   height: 45px;
-  margin-top: 10px;
+  margin-top: 1rem;
   border-radius: 3px;
   border: none;
-  color: white;
+  color: $color-principal;
   font-size: 2rem;
-  background: linear-gradient(to right top, $color-principal, #fffde4);
+  font-weight: bold;
+  background: linear-gradient(
+    to right top,
+    $color-secundario,
+    $color-terciario
+  );
 
   &:hover {
     cursor: pointer;
@@ -396,52 +532,60 @@ aside {
   }
 }
 
-.datos {
-  grid-area: direccion;
-  padding-top: 20px;
-  padding-bottom: 10px;
-  justify-self: center;
+#contacto {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
 
-  h3 {
-    font-size: 2rem;
+.formaContacto {
+  margin: auto;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  width: 90vw;
+  border-top: 2px solid $color-secundario;
+  border-bottom: 2px solid $color-secundario;
+  display: flex;
+  justify-content: space-around;
+}
+
+.cajaContacto {
+  width: 35rem;
+  height: auto;
+  background-color: $color-terciario;
+  border-radius: 1rem;
+  position: relative;
+
+  svg {
+    margin: auto;
+    padding-top: 2rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  p {
+    font-size: 1.5rem;
     text-align: center;
-    margin-top: 20px;
+    padding-top: 8rem;
+    padding-bottom: 2rem;
   }
 }
 
 .mapaContacto {
-  grid-area: mapa;
   margin-bottom: 3rem;
   padding: 2rem;
   border: 3px solid $color-principal;
   width: fit-content;
 }
 
-#contacto {
-  grid-area: formulario;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-
-.parrafoCont {
-  font-size: 1.5rem;
-  text-align: right;
-  margin-bottom: 40px;
-}
-
-.gridPadreCont {
-  display: grid;
-  grid-template-areas:
-    "formulario formulario"
-    "direccion mapa";
-  gap: 5rem;
-}
-
 /***************************************** DISEÑO RESPONSIVE *********************************************/
 
 /***************************************************** MEDIDAS QUERY PARA TABLETA */
-@media (min-width: 700px) and (max-width: 1100px) {
+@media (min-width: 768px) and (max-width: 1100px) {
   //************************************************************index.html
   .sectores {
     flex-wrap: wrap;
@@ -450,7 +594,7 @@ aside {
   .logo_wapp {
     position: fixed;
     right: 10px;
-    top: 50px;
+    top: 60px;
 
     img {
       width: 40px;
@@ -460,16 +604,9 @@ aside {
 
   //************************************************************quienes-somos.html
   .gridPadre {
-    grid-template-areas:
-      "parrafo1"
-      "imagen1"
-      "parrafo2"
-      "imagen2";
-  }
-
-  .imagenQs {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   //************************************************************servicios.html
@@ -529,7 +666,7 @@ aside {
 }
 
 /***************************************************** MEDIDAS QUERY PARA CELULAR */
-@media (min-width: 451px) and (max-width: 699px) {
+@media (min-width: 480px) and (max-width: 767px) {
   .tituloPag {
     padding-top: 3px;
     font-size: 2rem;
@@ -540,32 +677,24 @@ aside {
   }
 
   .logo_wapp {
-    position: fixed;
-    right: 10px;
-    top: 40px;
-
-    img {
-      width: 40px;
-      height: auto;
-    }
+    right: 1rem;
+    top: 45rem;
   }
 
   //************************************************************index.html
+  .cajaVm {
+    max-width: 70vw;
+    margin: 2rem;
+  }
+
   .sectores {
     flex-wrap: wrap;
   }
   //************************************************************quienes-somos.html
   .gridPadre {
-    grid-template-areas:
-      "parrafo1"
-      "imagen1"
-      "parrafo2"
-      "imagen2";
-  }
-
-  .imagenQs {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   //************************************************************servicios.html
@@ -641,7 +770,16 @@ aside {
 }
 
 /***************************************************** MEDIDAS QUERY PARA CELULAR MINI*/
-@media (max-width: 450px) {
+@media (max-width: 479px) {
+  .intro {
+    h2 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 3rem;
+    }
+  }
+
   .tituloPag {
     padding-top: 3px;
     font-size: 1.8rem;
@@ -649,8 +787,8 @@ aside {
 
   .logo_wapp {
     position: fixed;
-    right: 10px;
-    top: 40px;
+    right: 1rem;
+    top: 40rem;
 
     img {
       width: 40px;
@@ -663,22 +801,30 @@ aside {
     flex-wrap: wrap;
   }
 
+  .cajaVm {
+    max-width: 70vw;
+    margin: 2rem;
+  }
+
   .sectores {
     flex-wrap: wrap;
   }
 
   //************************************************************quienes-somos.html
   .gridPadre {
-    grid-template-areas:
-      "parrafo1"
-      "imagen1"
-      "parrafo2"
-      "imagen2";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .imagenQs {
-    display: flex;
-    justify-content: center;
+  .imagen01 {
+    max-width: 80%;
+    height: auto;
+  }
+
+  .imagen02 {
+    max-width: 80%;
+    height: auto;
   }
 
   //************************************************************servicios.html
