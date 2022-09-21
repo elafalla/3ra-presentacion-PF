@@ -9,7 +9,7 @@
 .logo_wapp {
   position: fixed;
   right: 1rem;
-  top: 10rem;
+  top: 35rem;
 }
 
 /*********************************** GENERALES EXCLUSIVOS DE INDEX ***********************************/
@@ -120,7 +120,7 @@
 }
 
 .img {
-  padding: 5pt;
+  padding: 0.5rem;
   display: flex;
   justify-content: center;
 }
@@ -315,8 +315,6 @@
 }
 
 .proyecto {
-  width: fit-content;
-  height: auto;
   margin: 1rem;
   padding: 1rem 0rem;
   border: 1px solid $color-principal;
@@ -372,15 +370,19 @@
 }
 
 aside {
-  padding-top: 15px;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   border-top: 2px solid $color-secundario;
+  border-bottom: 2px solid $color-secundario;
   width: 700px;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  margin-bottom: 3rem;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+
+.imgCarousel {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 /*********************************** GENERALES EXCLUSIVOS DE FAQ's ***********************************/
@@ -470,7 +472,7 @@ aside {
 
 .contenedor2 {
   background: $color-principal;
-  width: 43rem;
+  width: 45rem;
   padding: 3rem;
   margin: auto;
   margin-top: 3rem;
@@ -553,33 +555,34 @@ aside {
 
 .cajaContacto {
   width: 35rem;
-  height: auto;
+  height: 16rem;
+  margin: 1rem;
   background-color: $color-terciario;
+  box-shadow: 2px 2px 10px;
   border-radius: 1rem;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   svg {
-    margin: auto;
     padding-top: 2rem;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
+    padding-bottom: 2rem;
   }
 
   p {
     font-size: 1.5rem;
     text-align: center;
-    padding-top: 8rem;
     padding-bottom: 2rem;
   }
 }
 
 .mapaContacto {
-  margin-bottom: 3rem;
   padding: 2rem;
-  border: 3px solid $color-principal;
+  border: 3px solid $color-secundario;
+  box-shadow: 3px 3px 10px;
   width: fit-content;
+  height: auto;
+  margin: 0 auto;
 }
 
 /***************************************** DISEÑO RESPONSIVE *********************************************/
@@ -614,27 +617,7 @@ aside {
     flex-wrap: wrap;
   }
 
-  .gridPadreServ {
-    grid-template-areas:
-      "parrafoServ1"
-      "imgsrv"
-      "parrafoServ2"
-      "videosrv"
-      "parrafoServ3"
-      "clientes";
-  }
-
-  aside {
-    width: 600px;
-  }
-
   //************************************************************contacto.html
-  .gridPadreCont {
-    grid-template-areas:
-      "formulario"
-      "direccion"
-      "mapa";
-  }
 
   #contacto {
     justify-self: center;
@@ -656,15 +639,19 @@ aside {
     margin: 0;
   }
 
+  .formaContacto {
+    flex-wrap: wrap;
+  }
+
   .mapaContacto {
-    right: 0;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
+    margin: 0 auto;
+
+    iframe {
+      width: 80vw;
+      height: 30vw;
+    }
   }
 }
-
 /***************************************************** MEDIDAS QUERY PARA CELULAR */
 @media (min-width: 480px) and (max-width: 767px) {
   .tituloPag {
@@ -702,16 +689,6 @@ aside {
     flex-wrap: wrap;
   }
 
-  .gridPadreServ {
-    grid-template-areas:
-      "parrafoServ1"
-      "imgsrv"
-      "parrafoServ2"
-      "videosrv"
-      "parrafoServ3"
-      "clientes";
-  }
-
   aside {
     width: 400px;
   }
@@ -733,42 +710,33 @@ aside {
   }
 
   //************************************************************contacto.html
-  .gridPadreCont {
-    grid-template-areas:
-      "formulario"
-      "direccion"
-      "mapa";
-  }
-
-  .parrafoCont {
-    font-size: 1.5rem;
-    text-align: center;
-    margin-bottom: 40px;
-  }
-
-  .mapaContacto {
-    right: 0;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-
-    iframe {
-      width: 70vw;
-      height: 70vw;
-    }
-  }
 
   #contacto {
     justify-self: center;
     padding-bottom: 20px;
   }
 
-  .pContacto {
-    font-size: 10pt;
+  .contenedor2 {
+    width: 35rem;
+
+    h3 {
+      font-size: 2rem;
+    }
+  }
+
+  .formaContacto {
+    flex-wrap: wrap;
+  }
+
+  .mapaContacto {
+    margin: 0 auto;
+
+    iframe {
+      width: 70vw;
+      height: 70vw;
+    }
   }
 }
-
 /***************************************************** MEDIDAS QUERY PARA CELULAR MINI*/
 @media (max-width: 479px) {
   .intro {
@@ -788,7 +756,7 @@ aside {
   .logo_wapp {
     position: fixed;
     right: 1rem;
-    top: 40rem;
+    top: 45rem;
 
     img {
       width: 40px;
@@ -832,14 +800,10 @@ aside {
     flex-wrap: wrap;
   }
 
-  .gridPadreServ {
-    grid-template-areas:
-      "parrafoServ1"
-      "imgsrv"
-      "parrafoServ2"
-      "videosrv"
-      "parrafoServ3"
-      "clientes";
+  .proyecto {
+    p {
+      font-size: 1.3rem;
+    }
   }
 
   .videosrv {
@@ -852,47 +816,42 @@ aside {
   }
 
   //************************************************************contacto.html
-  .animate__bounceIn {
-    width: 90vw;
-  }
-
-  .gridPadreCont {
-    grid-template-areas:
-      "formulario"
-      "direccion"
-      "mapa";
-  }
 
   #contacto {
     justify-self: center;
     padding-bottom: 20px;
   }
 
-  .pContacto {
-    font-size: 10pt;
-  }
-
-  .datos {
+  /*   .datos {
     h3 {
       font-size: 1.6rem;
     }
+  } */
+
+  .contenedor2 {
+    width: 80vw;
+
+    h3 {
+      font-size: 2rem;
+    }
   }
-  .parrafoCont {
-    font-size: 1.3rem;
-    text-align: center;
-    margin-bottom: 40px;
+
+  .formaContacto {
+    flex-wrap: wrap;
+  }
+
+  .cajaContacto {
+    p {
+      font-size: 1.3rem;
+    }
   }
 
   .mapaContacto {
-    right: 0;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
+    margin: 0 auto;
 
     iframe {
-      width: 70vw;
-      height: 70vw;
+      width: 80vw;
+      height: auto;
     }
   }
 }

@@ -1,12 +1,13 @@
 /* FOOTER */
 
 footer {
+  margin-top: 2rem;
   background-color: $color-principal;
   border-top: 3px solid $color-secundario;
 
   p {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: $color-secundario;
     padding: 0.5rem;
   }
@@ -15,12 +16,12 @@ footer {
 .footer-redes {
   display: flex;
   justify-content: center;
+}
 
-  svg  {
-    padding-top: 1rem;
-    padding-left: 25px;
-    padding-right: 25px;
-  }
+.red {
+  padding-top: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .copyright {
