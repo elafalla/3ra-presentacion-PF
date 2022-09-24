@@ -59,20 +59,23 @@
     </svg>
   </section>
 
-  <section id="contacto">
-    <form class="formulario">
-      <div class="contenedor2 wow animate__bounceIn">
-        <h3>FORMULARIO DE CONTACTO</h3>
+  <section>
+    <!-- <div class="contacto"> -->
+    <form class="formulario wow animate__bounceIn">
+      <h3>FORMULARIO DE CONTACTO</h3>
+      <div class="contenedor-campos">
         <input class="campo" type="text" placeholder="Nombre y apellido" />
+        <input class="campo" type="tel" placeholder="Teléfono" />
         <input class="campo" type="text" placeholder="Email" />
-        <input class="campo" type="tel" placeholder="Número de teléfono" />
-        <input class="campo" type="text" placeholder="Ciudad" />
-        <textarea class="campo" name="mensaje_usuario" id="msg" cols="60" rows="10"
-          placeholder="Ingrese su mensaje"></textarea>
-        <button class="button">Enviar</button>
-        <button class="button">Borrar</button>
+        <input class="campo" type="text" placeholder="Asunto">
+        <textarea class="campo" placeholder="Mensaje"></textarea>
+      </div>
+      <div class="botonFlex">
+        <button class="boton">Enviar</button>
+        <button class="boton">Borrar</button>
       </div>
     </form>
+    <!-- </div> -->
   </section>
 
   <section class="formaContacto">
@@ -144,9 +147,8 @@
     </svg>
   </div>
 
-   <!-- FOOTER -->
-   <footer>
-    <p>Síganos en nuestras redes</p>
+  <!-- FOOTER -->
+  <footer>
     <section class="footer-redes">
       <div class="red">
         <a href="https://www.linkedin.com" target="_blank">
@@ -173,7 +175,7 @@
     </div>
   </footer>
   <!-- FIN FOOTER -->
-  
+
 </body>
 
 </html>

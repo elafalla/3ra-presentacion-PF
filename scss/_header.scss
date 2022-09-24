@@ -83,15 +83,11 @@
 }
 
 /*********************************************************************** DISEÑO RESPONSIVE ***************/
-/***************************************************** MEDIDAS QUERY PARA TABLETA */
-/* @media (min-width: 768px) and (max-width: 1100px) {
-
-} */
 
 /***************************************************** MEDIDAS QUERY PARA TABLET*/
 @media (min-width: 480px) and (max-width: 767px) {
   .encabezado {
-    height: 30vh;
+    height: 25vh;
 
     h1 {
       font-size: 4rem;
@@ -104,7 +100,7 @@
 }
 
 /***************************************************** MEDIDAS QUERY PARA CELULAR MINI*/
-@media (max-width: 479px) {
+@media (min-width: 321px) and (max-width: 479px) {
   .encabezado {
     height: 25vh;
 
@@ -121,4 +117,9 @@
     justify-content: flex-start;
     align-items: flex-end;
   }
+}
+
+/***************************************************** MEDIDAS QUERY PARA RELOJ*/
+@media (max-width: 320px) {
+
 }
