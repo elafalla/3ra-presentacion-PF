@@ -17,6 +17,7 @@ body {
   font-size: 1.6rem;
   font-family: 'Montserrat', sans-serif; }
 
+/* $color-cuaternario: #24303c; */
 /* HEADER */
 .encabezado {
   background-image: url("../img/inicio.jpg");
@@ -83,7 +84,7 @@ body {
     border: 2px solid whitesmoke;
     border-radius: 1rem; }
     .flex-boton a:hover {
-      background-color: #008080;
+      background-color: #8c8c8c;
       color: #FFC107;
       border: 2px solid #FFC107; }
 
@@ -111,7 +112,7 @@ body {
 
 /***************************************************** MEDIDAS QUERY PARA RELOJ*/
 .barraNav-fondo {
-  background-color: #008080;
+  background-color: #8c8c8c;
   position: sticky;
   top: 0;
   border-top: 3px solid #FFC107;
@@ -130,6 +131,7 @@ body {
     color: #FFC107;
     text-decoration: none;
     font-size: 1.7rem;
+    font-weight: bold;
     transition: 0.5s; }
     .barraNav a:hover {
       background-color: #FFC107;
@@ -214,7 +216,7 @@ body {
 
 .cajaVm {
   max-width: 40vw;
-  border: 2px solid #008080;
+  border: 2px solid #8c8c8c;
   border-radius: 10px;
   box-shadow: 3px 3px 30px;
   margin: 2rem;
@@ -226,7 +228,7 @@ body {
     text-transform: uppercase;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: #008080;
+    background-color: #8c8c8c;
     color: #FFC107; }
   .cajaVm p {
     text-align: center;
@@ -248,12 +250,12 @@ body {
 .caja {
   margin: 2rem;
   width: 16rem;
-  border: 1px solid #008080;
+  border: 1px solid #8c8c8c;
   border-radius: 4px;
   text-align: center;
   box-shadow: 3px 3px 15px; }
   .caja h3 {
-    background-color: #008080;
+    background-color: #8c8c8c;
     color: #FFC107;
     font-size: 1.5rem;
     text-transform: uppercase;
@@ -347,7 +349,7 @@ body {
 
 .imagen01 {
   grid-area: imagen1;
-  border: 2px solid #008080;
+  border: 2px solid #8c8c8c;
   box-shadow: 2px 2px 8px;
   height: fit-content;
   width: fit-content;
@@ -356,7 +358,7 @@ body {
 
 .imagen02 {
   grid-area: imagen2;
-  border: 2px solid #008080;
+  border: 2px solid #8c8c8c;
   box-shadow: 2px 2px 8px;
   height: fit-content;
   width: fit-content;
@@ -428,7 +430,7 @@ body {
   padding: 10px;
   height: 160px;
   width: 160px;
-  border: 1px solid #008080;
+  border: 1px solid #8c8c8c;
   border-radius: 5px;
   box-shadow: 3px 3px 10px;
   background-color: whitesmoke;
@@ -473,7 +475,7 @@ body {
   border: 2px solid #FFC107;
   border-radius: 1rem;
   box-shadow: 3px 3px 10px;
-  background-color: #008080; }
+  background-color: #8c8c8c; }
   .proyecto h4 {
     text-transform: uppercase;
     font-size: 1.5rem;
@@ -570,7 +572,7 @@ aside {
 .faqContacto {
   margin: 3.5rem;
   padding: 0.5rem;
-  border: 2px solid #008080;
+  border: 2px solid #8c8c8c;
   background-color: #ECECEC;
   border-radius: 5px;
   box-shadow: 5px 5px 15px;
@@ -597,11 +599,11 @@ aside {
     margin-top: 3rem; }
 
 .formulario {
-  background: #008080;
+  background: #8c8c8c;
   width: 50rem;
   padding: 2rem;
   border-radius: 10px;
-  box-shadow: 7px 13px 35px #008080;
+  box-shadow: 7px 13px 35px #8c8c8c;
   margin: 0 auto; }
   .formulario h3 {
     font-size: 2.2rem;
@@ -622,23 +624,26 @@ aside {
     height: 40px; }
 
 .boton {
-  background-color: #FFC107;
-  color: whitesmoke;
-  font-size: 2rem;
+  background-color: #ECECEC;
+  color: black;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
   width: 50%;
   height: 45px;
   margin: 1rem 1rem;
-  border-radius: 3px;
-  border: 3px solid #ECECEC;
+  border-radius: 10px;
+  border: 3px solid #FFC107;
   text-align: center; }
   .boton:hover {
     cursor: pointer;
     transform: translateY(-3px);
     transition: all cubic-bezier(0.215, 0.61, 0.355, 1);
-    background-color: #ECECEC;
-    color: #FFC107;
+    background-color: #FFC107;
+    color: whitesmoke;
     font-weight: bold;
-    border: 2px solid #FFC107; }
+    text-shadow: 1px 1px #000;
+    border: 2px solid whitesmoke; }
   .boton:active {
     transform: translateY(3px); }
 
@@ -737,14 +742,11 @@ aside {
 
 /***************************************************** MEDIDAS QUERY PARA CELULAR */
 @media (min-width: 480px) and (max-width: 767px) {
-  .tituloPag {
-    padding-top: 3px;
-    font-size: 2rem; }
+  .logo_wapp {
+    right: 6rem;
+    top: 1.5rem; }
   .visionMision {
     flex-wrap: wrap; }
-  .logo_wapp {
-    right: 1rem;
-    top: 45rem; }
   .cajaVm {
     max-width: 70vw;
     margin: 2rem; }
@@ -798,12 +800,8 @@ aside {
 /***************************************************** MEDIDAS QUERY PARA CELULAR MINI*/
 @media (min-width: 321px) and (max-width: 479px) {
   .logo_wapp {
-    position: fixed;
-    right: 1rem;
-    top: 45rem; }
-    .logo_wapp img {
-      width: 40px;
-      height: auto; }
+    right: 3rem;
+    top: 1rem; }
   .main h2 {
     font-size: 2rem; }
   .main p {
@@ -879,7 +877,10 @@ aside {
   .campo {
     width: 90%; }
   .boton {
-    width: 90%; }
+    width: 90%;
+    font-size: 1.5rem; }
+  ::placeholder {
+    font-size: 1.5rem; }
   .botonFlex {
     flex-direction: column;
     align-items: center; }
@@ -895,6 +896,9 @@ aside {
 
 /***************************************************** MEDIDAS QUERY PARA RELOJ*/
 @media (max-width: 320px) {
+  .logo_wapp {
+    right: 3rem;
+    top: 3rem; }
   .main h2 {
     font-size: 2rem;
     margin-top: 2rem; }
@@ -983,9 +987,12 @@ aside {
   .formulario {
     max-width: 80vw; }
   .campo {
-    width: 90%; }
+    width: 85%; }
   .boton {
-    width: 90%; }
+    width: 85%;
+    font-size: 1.5rem; }
+  ::placeholder {
+    font-size: 1.5rem; }
   .botonFlex {
     flex-direction: column;
     align-items: center; }
@@ -1008,7 +1015,7 @@ aside {
 /* FOOTER */
 footer {
   margin-top: 2rem;
-  background-color: #008080;
+  background-color: #8c8c8c;
   border-top: 3px solid #FFC107; }
   footer p {
     text-align: center;
